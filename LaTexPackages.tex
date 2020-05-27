@@ -8,7 +8,7 @@
 
 %The packages below are optional, please add or alter as required.
 
-\usepackage{cite}				 %Allows abbreviated numerical citations.
+%\usepackage{cite}				 %Allows abbreviated numerical citations.
 \usepackage{pdfpages}			 %Allows you to include full-page pdfs.
 \usepackage{wrapfig}			 %Lets you wrap text around figures.
 \usepackage{bm} 				 %Bolded maths characters.
@@ -44,7 +44,8 @@
 \usepackage[figuresright]{rotating}	%Allows large tables to be rotated to landscape.
 \usetikzlibrary{shapes.geometric, arrows}
 %You can add more packages here if you need
-
+\usepackage[backend=biber, style=biblatex-sp-unified, citestyle=sp-authoryear-comp]{biblatex}
+\addbibresource{References/bibliography.bib}
 
 %This defines some macros that implement Latin abbreviations
 %COMMENT OUT OR DELETE IF UNDESIRED.
