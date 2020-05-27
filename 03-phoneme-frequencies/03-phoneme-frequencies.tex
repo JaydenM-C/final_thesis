@@ -8,10 +8,10 @@
 %Use this command (above) to suppress the header from the preceding chapter.
 
 \noindent
-The following publication has been incorporated as Chapter~\ref{Chap:label}.
+The following publication has been incorporated as Chapter~\ref{Chap:phon-freqs}.\\
 
 \noindent
-\fullcite{DumyCitationKey}
+\fullcite{DumyCitationKey}\\
 
 \begin{table}[h]
 	\centering
@@ -19,24 +19,29 @@ The following publication has been incorporated as Chapter~\ref{Chap:label}.
 		\toprule
 		Contributor & Statement of contribution & \% \\
 		\midrule
-		\textbf{Your Name}				& writing of text 					& 70\\
-															& proof-reading							& 60 \\
-															& theoretical derivations 	& 70\\
-															& numerical calculations 		& 100\\
-															& preparation of figures 		& 80 \\
-															& initial concept						& 10 \\
+		\textbf{Jayden Macklin-Cordes}	& initial concept			& 100 \\
+		                                & scripting, analysis     	& 80  \\
+		                                & theoretical derivations 	& 60  \\
+		                                & writing of text 			& 70  \\
+		                                & preparation of figures 	& 100 \\
+										& proof-reading				& 20  \\
 		\midrule
-		Co-author 1								& writing of text 					& 20\\
-															& proof-reading							& 10 \\
-															& supervision, guidance 		& 20\\
-															& theoretical derivations 	& 10\\
-															& preparation of figures 		& 20 \\
-															& initial concept						& 10 \\
+		Erich Round						& supplying data            & 100 \\
+		                                & scripting, analysis       & 20  \\
+		                                & theoretical derivations 	& 40  \\
+		                                & supervision, guidance 	& 100 \\
+		                                & writing of text 			& 30  \\
+										& proof-reading				& 80  \\
 		\bottomrule
 	\end{tabular}
 \end{table}
 
-If your task breakdown requires further clarification, do so here. Do not exceed a single page.
+\noindent
+Data is sourced from the Ausphon Lexicon database, created and maintained by Erich Round.\\
+\noindent
+Macklin-Cordes came up with the initial concept for the study, wrote scripts and performed all the initial analysis. He wrote and subsequently revised the initial draft of the paper. Macklin-Cordes also wrote the phoneme frequency viewer app contained in the supplementary materials.\\
+\noindent
+Round provided guidance throughout. He revised significant portions of the text and added to the theoretical framing and contribution of the paper. He also revised scripts for efficiency and extended likelihood ratio testing to include $x_{min}$ parameters (described in \ref{comparison-of-distribution-types}).
 
 
 % ***************************************************
@@ -44,8 +49,8 @@ If your task breakdown requires further clarification, do so here. Do not exceed
 % ***************************************************
 %This is an internal chapter of the thesis.
 %If you have a long title, you can supply an abbreviated version to print in the Table of Contents using the optional argument to the \chapter command.
-\chapter[Abbreviated title]{Full title}
-\label{Chap:label}	%CREATE YOUR OWN LABEL.
+\chapter[Re-evaluating phoneme frequencies]{Re-evaluating Phoneme Frequencies}
+\label{Chap:phon-freqs}	%CREATE YOUR OWN LABEL.
 \pagestyle{headings}
 
 % ********* Enter your text below this line: ********
@@ -55,7 +60,7 @@ Causal processes can give rise to distinctive distributions in the linguistic va
 
 
 \section{Introduction}
-\label{Sec:label}	%CREATE YOUR OWN LABEL.
+\label{Sec:intro}	%CREATE YOUR OWN LABEL.
 
 % ********* Enter your text below this line: ********
 
@@ -175,7 +180,7 @@ Our data comes from the Ausphon-Lexicon database, under development by the secon
 To illustrate an example of the phoneme frequencies in our sample, Figure \ref{fig:walmajarri-freqs} plots the frequencies of phonological segments in the Walmajarri lexicon \autocite{hudson_walmajarri_1993}. Equivalent plots for every language in our sample can be viewed through an interactive visualisation app that we provide in S4 of the Supplementary Materials.
 
 \begin{figure}
-\includegraphics[width=1\linewidth]{03-phoneme-frequences/fig/walmajarri} \caption{Frequency of phonemes in Walmajarri lexicon \autocite{hudson_walmajarri_1993}. Plot (a) displays relative frequencies of each segment type. Plot (b) shows the same frequencies on log-transformed \(x\) and \(y\) axes---the traditional visual device used to identify power laws.}\label{fig:walmajarri-freqs}
+\includegraphics[width=1\linewidth]{03-phoneme-frequencies/fig/walmajarri} \caption{Frequency of phonemes in Walmajarri lexicon \autocite{hudson_walmajarri_1993}. Plot (a) displays relative frequencies of each segment type. Plot (b) shows the same frequencies on log-transformed \(x\) and \(y\) axes---the traditional visual device used to identify power laws.}\label{fig:walmajarri-freqs}
 \end{figure}
 
 
@@ -221,7 +226,7 @@ As a brief point of comparison to prior work, we return to the Walmajarri exampl
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.66\linewidth]{03-phoneme-frequences/fig/walmajarri_lm} 
+{\centering \includegraphics[width=0.66\linewidth]{03-phoneme-frequencies/fig/walmajarri_lm} 
 
 }
 
