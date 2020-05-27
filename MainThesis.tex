@@ -99,10 +99,28 @@
 %If you wish to divide your thesis into parts (each containing multiple chapters), us the \part{} command.
 
 %CHAPTER 1
-\input{./Chapter1/Introduction.tex}
+\input{./01-introduction/01-introduction.tex}
 
 %CHAPTER 2
-\input{./Chapter2/Chapter2.tex}
+\input{./02-literature-review/02-literature-review.tex}
+
+%CHAPTER 3
+\input{./03-phoneme-frequencies/03-phoneme-frequencies.tex}
+
+%CHAPTER 4
+\input{./04-pcms-in-linguistics/04-pcms-in-linguistics.tex}
+
+%CHAPTER 5
+\input{./05-phylo-signal/05-phylo-signal.tex}
+
+%CHAPTER 6
+\input{./06-tree-inference/06-tree-inference.tex}
+
+%CHAPTER 7
+\input{./07-discussion/07-discussion.tex}
+
+%CHAPTER 8
+\input{./08-conclusion/08-conclusion.tex}
 
 % HOW TO ADD ADDITIONAL CHAPTERS
 % Step One: Add a new folder called "ChapterX" (X being the chapter number).
@@ -112,7 +130,7 @@
 % Repeat this process for every chapter.
 
 %CONCLUSION CHAPTER
-\input{./Conclusion/Conclusion.tex}
+%\input{./Conclusion/Conclusion.tex}
 
 % ***************************************************
 % Bibliography
@@ -141,7 +159,9 @@
 %Simply adapt the same formatting used for other chapters.
 \appendix
 % If you need appendix in your thesis then consider the following appendix file (you can add more if you need more) otherwise you should not consider it in your main thesis.
-\include{./Appendix/Appendix}
+\include{./Appendix-A/Appendix-A.tex}
+\include{./Appendix-A/Appendix-B.tex}
+\include{./Appendix-A/Appendix-C.tex}
 
 % ***************************************************
 % Examples
