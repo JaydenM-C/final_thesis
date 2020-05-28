@@ -46,8 +46,10 @@
 
 %You can add more packages here if you need
 \usepackage[backend=biber, style=biblatex-sp-unified, citestyle=sp-authoryear-comp]{biblatex}
+% bib sources added in order of priority (i.e. in case of duplicates, delete duplicate from lower-ordered bib file)
+\addbibresource{References/my_publications.bib} 
 \addbibresource{References/bibliography.bib}
-\addbibresource{References/my_publications.bib}
+\addbibresource{References/03-wordlist_sources.bib}
 \usepackage{threeparttable}
 
 %This defines some macros that implement Latin abbreviations
