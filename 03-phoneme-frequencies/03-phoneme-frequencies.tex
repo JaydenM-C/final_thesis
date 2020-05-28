@@ -8,7 +8,7 @@
 %Use this command (above) to suppress the header from the preceding chapter.
 
 \noindent
-The following publication has been incorporated as Chapter~\ref{Chap:phon-freqs}.\\
+The following publication has been incorporated as Chapter~\ref{Chap:phon-freqs}:\\
 
 \noindent
 \fullcite{macklin-cordes_re-evaluating_nodate}\\
@@ -219,7 +219,7 @@ We test for the presence or absence of a power law in the distributions of phono
   Compare the power law model with a set of models representing alternative hypotheses. For each alternative model, a bootstrapped \(p\) value is calculated as in steps 1 and 2 above. A likelihood ratio test is performed, comparing the fit of the alternatives with those of the power law model. If the calculated likelihood ratio is significantly different from zero, this indicates a significant difference in plausibility, and its sign (positive or negative) indicates which model is favoured \autocite[p.~680]{clauset_power-law_2009}.
 \end{enumerate}
 
-We use the \emph{poweRlaw} package \autocite{gillespie_fitting_2014} in \emph{R} statistical software \autocite{r-core-team_r_2017} to infer all maximum likelihood estimates and conduct bootstrapping to derive \(p\) values. We run 10,000 bootstrap iterations per language, per distribution type.\footnote{We find that 10,000 iterations is sufficient to obtain stable parameter estimates. Beyond 10,000 iterations, estimates will continue to fluctuate but in a tightly proscribed range. Plots of all bootstrapping runs can be viewed in the interactive visualisation app provided in Section S4.}
+We use the \emph{poweRlaw} package \autocite{gillespie_fitting_2014} in \emph{R} statistical software \autocite{r_core_team_r_2017} to infer all maximum likelihood estimates and conduct bootstrapping to derive \(p\) values. We run 10,000 bootstrap iterations per language, per distribution type.\footnote{We find that 10,000 iterations is sufficient to obtain stable parameter estimates. Beyond 10,000 iterations, estimates will continue to fluctuate but in a tightly proscribed range. Plots of all bootstrapping runs can be viewed in the interactive visualisation app provided in Section S4.}
 
 \hypertarget{methodological-considerations}{%
 \subsection{Methodological considerations}\label{methodological-considerations}}
