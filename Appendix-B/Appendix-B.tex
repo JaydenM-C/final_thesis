@@ -4,17 +4,17 @@
 \chapter{Supplementary information for Chapter 5}
 
 \hypertarget{pama-nyungan-reference-phylogeny}{%
-\section{Pama-Nyungan reference
-phylogeny}\label{pama-nyungan-reference-phylogeny}}
+\subsection{Pama-Nyungan reference
+phylogeny}\label{-pama-nyungan-reference-phylogeny}}
 
 Quantifying phylogenetic signal requires an independently-derived
-reference phylogeny as a yardstick. Our reference phylogeny is a 128-tip
-subset of the 285-tip Pama-Nyungan phylogeny presented by
-\textcite{bowern_pama-nyungan_2015}, corresponding to the 128 wordlists
-used in this study (Figure A.2.1).
+reference phylogeny as a yardstick. Our reference phylogeny is a 285-tip
+Pama-Nyungan phylogeny inferred by the second author. Figure S1 gives a
+111-tip subset of this phylogeny, corresponding to the 111 doculects
+used in this study.
 
 \begin{figure}
-\includegraphics[width=1\linewidth]{Appendix-B/fig/PN_tree_with_posteriors} \caption{Figure A.2.1. Pama-Nyungan reference phylogeny. Posterior probability values from Bowern (2015) have been added, giving an indication of support for each node. Although there is no strict, conventional cut-off, clades with posterior values above 0.5 are considered supported and values above 0.8 are considered strongly supported (Bowern \& Atkinson 2012, p.829).}\label{fig:plot-ref-tree2}
+\includegraphics[width=1\linewidth]{Appendix-B/fig/PN_beast_pruned} \caption{Pama-Nyungan reference phylogeny. Node labels are posterior probabilities, giving an indication of support for each node. Although there is no strict, conventional cut-off, clades with posterior values above 0.5 are considered supported and values above 0.8 are considered strongly supported (Bowern \& Atkinson 2012, p.829).}\label{fig:plot-ref-tree2}
 \end{figure}
 
 As discussed in the main paper, the reference phylogeny was constructed
@@ -22,12 +22,11 @@ using Bayesian phylogenetic methods in the software BEAST2
 \autocite{bouckaert_beast_2014}. Bayesian phylogenetic methods use a
 Markov Chain Monte Carlo (MCMC) procedure to efficiently search the
 hypothesis space of possible trees and return a large posterior sample
-of possibilities (from which an indication of uncertaintly can be
-derived). The tree contained in the nexus file above is a maximum clade
-credibility tree, which is a summation of the posterior sample of the
-\textcite{bowern_pama-nyungan_2015} analysis where the likelihood of all
-nodes in the tree (in terms of how frequently a given node reappears
-across the posterior sample) is maximized.
+of similarly credible alternatives (capturing phylogenetic uncertainty).
+The tree in Figure S1 above is a maximum clade credibility tree, which
+is a summation of the posterior sample where the likelihood of all nodes
+in the tree (in terms of how frequently a given node reappears across
+the posterior sample) is maximized.
 
 For further details on the Pama-Nyungan phylogeny used as a reference
 phylogeny in this study, see \textcite{bowern_pama-nyungan_2015}. See
@@ -41,8 +40,8 @@ model is used.
 
 The reference phylogeny was inferred using lexical cognate data, coded
 according to the principles of the Comparative Method. The cognate data
-used in \textcite{bowern_pama-nyungan_2015} is publicly available on
-Zenodo \autocite{bowern_pama-nyungan_2018} and also as a subset of the
+used in the reference phylogeny is publicly available on Zenodo
+\autocite{bowern_pama-nyungan_2018} and also as a subset of the
 305-language dataset in \textcite{bouckaert_origin_2018}. This latter
 source also includes a Perl script for converting multistate cognate
 judgements into a binary matrix for use with BEAST2 phylogenetic
@@ -50,592 +49,600 @@ software and will include information on underlying sources.
 
 \newpage
 
-\hypertarget{wordlist-sources}{%
-\section{Wordlist sources}\label{wordlist-sources}}
+\hypertarget{phy-sig-wordlist-sources}{%
+\subsection*{Wordlist sources}\label{phy-sig-wordlist-sources}}
+\addcontentsline{toc}{subsection}{Wordlist sources}
 
-The 128 wordlists used in this study are contained within the Ausphonlex
+The 111 wordlists used in this study are contained within the Ausphonlex
 database, under development by \textcite{round_ausphon-lexicon_2017}.
 All underlying wordlist data is available, either publicly in the
 CHIRILA database \autocite{bowern_chirila_2016} or elsewhere in
 published or archived form. A list of original sources for all wordlists
 is presented below.
 
-\textbf{Adnyamathanha}\\
+\textbf{Adnyamathanha}
+
 CHIRILA source: CHIRILA/v2/McEnteeMcKenzie
 
 \fullcite{mcentee_adna-mat-na_1992}
 
-\textbf{Aghu Tharnggala}\\
-CHIRILA source: CHIRILA/not\_released/jol89
+Phonemic normalization: Coda tap normalized as vibrant. Otherwise,
+voiced stops, taps and fricatives normalized to lenis obstruents.
 
-\fullcite{jolly_aghu_1989}
+\textbf{Mbakwithi}
 
-\textbf{Anguthimri}\\
 CHIRILA source: CHIRILA/v1/ASEDA0240
 
 \fullcite{crowley_mbakwithi_1989}
 
-\textbf{Antekerrepenhe}\\
-CHIRILA source: CHIRILA/not\_released/ASEDA0112
-
-\fullcite{breen_antekerrepenhe_2006}
-
-\textbf{Ayapathu}\\
-CHIRILA source: CHIRILA/v2/Hamilton-web
-
-\fullcite{hamilton_ayapathu_1997}
-
-\textbf{Badimaya}\\
-CHIRILA source: CHIRILA/not\_released/ASEDA0615
+\textbf{Badimaya}
 
 \fullcite{marmion_badimaya_1995}
 
-\textbf{Bakanh}\\
+Phonemic normalization: Double a normalized to long vowel.
+
+\textbf{Pakanh}
+
 \fullcite{hamilton_pakanh_1997}
 
-\textbf{Bidyara}\\
-CHIRILA source: CHIRILA/not\_released/bre73
+\textbf{BidyaraGungabula}
 
 \fullcite{breen_bidyara_1973}
 
-\textbf{Bilinarra}\\
+\textbf{Bilinarra}
+
 \fullcite{meakins_bilinarra_2013}
 
-\textbf{Biri}\\
+\textbf{Biri}
+
 CHIRILA source: CHIRILA/v1/Terrell
 
 \fullcite{terrill_biri_1999}
 
-\textbf{Bularnu}\\
-CHIRILA source: CHIRILA/not\_released/ASEDA0007
+\textbf{Bularnu}
 
 \fullcite{breen_bularnu_1988}
 
-\textbf{Butchulla}\\
-CHIRILA source: CHIRILA/not\_released/ASEDA0769
+\textbf{Batyala}
 
 \fullcite{bell_sketch_2003}
 
-\textbf{Dhangu}\\
-CHIRILA source: CHIRILA/not\_released/Zorc-Pepperill
+\textbf{Dhangu}
 
 \fullcite{zorc_yolngu_2004}
 
-\textbf{Dharumbal}\\
+Phonemic normalization: Lenis retroflex stop normalized to retroflex
+flap.
+
+\textbf{Dharumbal}
+
 CHIRILA source: CHIRILA/v2/ter02
 
 \fullcite{terrill_dharumbal:_2002}
 
-\textbf{Dhay'yi}\\
-CHIRILA source: CHIRILA/not\_released/ASEDA0502
+\textbf{Dhayyi}
 
 \fullcite{wunungmurra_dhalwangu_1993}
 
-\textbf{Diyari}\\
-\fullcite{austin_grammar_2011}
+Phonemic normalization: Lenis retroflex stop normalized to retroflex
+flap; all other voicing is allophonic.
 
-\textbf{Djabugay}\\
-CHIRILA source: CHIRILA/not\_released/ASEDA0013
+\textbf{Diyari}
+
+\fullcite{austin_grammar_1981}
+
+Phonemic normalization: Phonetic trill-released stop normalized as stop
++ trill. Otherwise, voiced stops normalized as taps.
+
+\textbf{Djabugay}
 
 \fullcite{robertson_jaabugay_1997}
 
-\textbf{Djapu}\\
+\textbf{Djapu}
+
 CHIRILA source: CHIRILA/v1/mor83
 
 \fullcite{morphy_djapu_1983}
 
-\textbf{Djinang}\\
+Phonemic normalization: Lenis retroflex stop normalized to retroflex
+flap.
+
+\textbf{Djinang}
+
 CHIRILA source: CHIRILA/v1/ASEDA0009
 
 \fullcite{waters_djinang_1988}
 
-\textbf{Duungidjawu}\\
+Phonemic normalization: Glottal closure normalized to a segment phoneme.
+
+\textbf{Duungidjawu}
+
 CHIRILA source: CHIRILA/v2/K\&W 04
 
 \fullcite{kite_duungidjawu_2004}
 
-\textbf{Dyirbal}\\
+\textbf{Dyirbal}
+
 CHIRILA source: CHIRILA/v1/dix72
 
 \fullcite{dixon_dyirbal_1972}
 
-\textbf{Gamilaraay}\\
+\textbf{Gamilaraay}
+
 CHIRILA source: CHIRILA/v1/ash03
 
 \fullcite{ash_gamilaraay_2003}
 
-\textbf{Gangulu}\\
+\textbf{Gangulu}
+
 CHIRILA source: CHIRILA/v1/Terrell
 
 \fullcite{terrill_biri_1999}
 
-\textbf{Gidabal}\\
+\textbf{Githabul}
+
 CHIRILA source: CHIRILA/v1/cro78
 
 \fullcite{crowley_middle_1978}
 
-\textbf{Gugu Badhun}\\
+\textbf{GuguBadhun}
+
 CHIRILA source: CHIRILA/v1/sut73
 
 \fullcite{sutton_gugu-badhun_1973}
 
-\textbf{Gumbaynggir}\\
-CHIRILA source: CHIRILA/not\_released/gumbay01
+\textbf{Gumbaynggir}
 
 \fullcite{murrbay_aboriginal_and_culture_cooperative_gumbaynggir_2001}
 
-\textbf{Gunggari}\\
-CHIRILA source: CHIRILA/v1/hol88
+\textbf{Gunya}
 
-\fullcite{holmer_notes_1988}
-
-\textbf{Gunya}\\
 CHIRILA source: CHIRILA/v1/dixbla81
 
 \fullcite{breen_margany_1981}
 
-\textbf{Gupapuyngu}\\
+\textbf{Gupapuyngu}
+
 CHIRILA source: CHIRILA/v1/BL
 
 \fullcite{lowe_temporary_1976}
 
-\textbf{Gurindji}\\
+\textbf{Gurindji}
+
 \fullcite{meakins_gurindji_2013}
 
-\textbf{Guugu Yimidhirr}\\
+\textbf{GuuguYimidhirr}
+
 \fullcite{haviland_guugu_1979}
 
-\textbf{Guwamu}\\
+\textbf{Guwamu}
+
 CHIRILA source: CHIRILA/v1/Austin 1980
 
 \fullcite{austin_guwamu_1980}
 
-\textbf{Ikarranggal}\\
-CHIRILA source: CHIRILA/not\_released/som99
-
-\textbf{Jaru}\\
-CHIRILA source: CHIRILA/not\_released/Tsunoda-ASEDA
+\textbf{Jaru}
 
 \fullcite{tsunoda_jaru_1981}
 
-\textbf{Jiwarli}\\
+Phonemic normalization: iji and uwu normalized as long high vowels.
+
+\textbf{Jiwarli}
+
 CHIRILA source: CHIRILA/v2/ASEDA0435
 
 \fullcite{austin_dictionary_nodate-1}
 
-\textbf{Kaantju}\\
-\fullcite{sommer_coen_nodate}
+\textbf{Kalkatungu}
 
-\textbf{Kalkatungu}\\
 CHIRILA source: CHIRILA/v2/ASEDA0205
 
 \fullcite{blake_kalkatungu_1990}
 
-\textbf{Karajarri}\\
-CHIRILA source: CHIRILA/not\_released/ASEDA0069 (McKelson)
+Phonemic normalization: Double short vowels normalized as long.
+
+\textbf{Karajarri}
 
 \fullcite{mckelson_studies_1989}
 
-\textbf{Kariyarra}\\
-CHIRILA source: CHIRILA/not\_released/ASEDA0582
+\textbf{Kariyarra}
 
 \fullcite{smythe_kariyarra_nodate}
 
-\textbf{Kartujarra}\\
-CHIRILA source: CHIRILA/not\_released/ASEDA0067
+\textbf{Kartujarra}
 
 \fullcite{ogrady_gardudjarra_1988}
 
-\textbf{Kok Nar}\\
+\textbf{KokNar}
+
 \fullcite{sommer_koko_nodate}
 
-\textbf{Koko Bera}\\
-CHIRILA source: CHIRILA/not\_released/PBKB
+\textbf{KokoBera}
 
-\fullcite{black_kokoberrin_1999}
+\fullcite{black_kokoberrin_2007}
 
-\textbf{Kugu Nganhcara}\\
+\textbf{KuguNganhcara}
+
 CHIRILA source: CHIRILA/v1/ASEDA0021
 
 \fullcite{smith_kugu_1989}
 
-\textbf{Kukatj}\\
-CHIRILA source: CHIRILA/not\_released/ASEDA0022
+\textbf{Kukatj}
 
 \fullcite{breen_kukatj_1991}
 
-\textbf{Kukatja}\\
+Phonemic normalization: Featureless vowel normalized as schwa.
+
+\textbf{Kukatja}
+
 CHIRILA source: CHIRILA/v1/ASEDA0504
 
 \fullcite{peile_basic_nodate}
 
-\textbf{Kuku Yalanji}\\
+\textbf{KukuYalanji}
+
 \fullcite{hershberger_kuku-yalanji_1986}
 
-\textbf{Kungkari}\\
-CHIRILA source: CHIRILA/v1/bre90
-
-\fullcite{breen_salvage_1990}
-
-\textbf{Kurrama}\\
-CHIRILA source: CHIRILA/not\_released/ASEDA0481
+\textbf{Kurrama}
 
 \fullcite{dench_kurrama_nodate}
 
-\textbf{Kurtjar}\\
+\textbf{Kurtjar}
+
 CHIRILA source: CHIRILA/v1/ASEDA0026
 
-\fullcite{black_kurtjar_nodate}
+\fullcite{black_kurtjar_1988}
 
-\textbf{Kuugu Ya'u}\\
-CHIRILA source: CHIRILA/not\_released/ASEDA0027
+Phonemic normalization: Retroflex glide\textasciitilde{}tap normalized
+as glide.
+
+\textbf{KuukuYau}
 
 \fullcite{thompson_sand_1988}
 
-\textbf{Linngithigh}\\
-CHIRILA source: CHIRILA/not\_released/ASEDA0687
+\textbf{Linngithigh}
 
 \fullcite{hale_linngithigh_1999}
 
-\textbf{Malkana}\\
+Phonemic normalization: Trill-released stop normalized as stop + trill.
+Prenasalized stops normalized to nasal + lenis stop.
+
+\textbf{Malgana}
+
 \fullcite{gargett_salvage_2011}
 
-\textbf{Malngin}\\
-\fullcite{ise_grammatical_1999}
+\textbf{Malyangapa}
 
-\textbf{Malyangapa}\\
-CHIRILA source: CHIRILA/not\_released/LH/fn
+\fullcite{hercus_maljangapa-wadigali_1989}
 
-\textbf{Mangala}\\
-CHIRILA source: CHIRILA/not\_released/ASEDA0220
+\textbf{MangalaMcK}
 
 \fullcite{mckelson_mangala_1989}
 
-\textbf{Margany}\\
+\textbf{Margany}
+
 CHIRILA source: CHIRILA/v1/bre81
 
 \fullcite{breen_margany_1981}
 
-\textbf{Martuthunira}\\
+\textbf{Martuthunira}
+
 \fullcite{dench_martuthunira_1995}
 
-\textbf{Mbabaram}\\
-CHIRILA source: CHIRILA/not\_released/dix91m
-
-\fullcite{dixon_mbabaram_1991}
-
-\textbf{Mirrniny}\\
-CHIRILA source: CHIRILA/not\_released/ASEDA0070
+\textbf{Mirniny}
 
 \fullcite{ogrady_mirniny_1988}
 
-\textbf{Mudburra}\\
-CHIRILA source: CHIRILA/not\_released/ASEDA0031
+\textbf{Mudburra}
 
 \fullcite{nash_mudburra_1988}
 
-\textbf{Muruwari}\\
+\textbf{Muruwari}
+
 CHIRILA source: CHIRILA/v1/ASEDA0252
 
 \fullcite{oates_muruwari_1992}
 
-\textbf{Narrungga}\\
-CHIRILA source: CHIRILA/v1/NharranggaWarra
+\textbf{Ngaanyatjarra}
 
-\fullcite{narungga_aboriginal_progress_association_nharangga_2006}
-
-\textbf{Ngaanyatjarra}\\
 \fullcite{glass_ngaanyatjarra_1988}
 
-\textbf{Ngadjunmaya}\\
+\textbf{Ngadjumaya}
+
 \fullcite{wangka_maya_pilbara_aboriginal_language_centre_ngajumaya_2008}
 
-\textbf{Ngamini}\\
+\textbf{Ngamini}
+
 CHIRILA source: CHIRILA/v1/brendn
 
-\fullcite{breen_ngamini_1975}
+\fullcite{breen_ngamini_1967}
 
-\textbf{Ngardily}\\
-CHIRILA source: CHIRILA/not\_released/ASEDA0034
+Phonemic normalization: Phonetic trill-released stop normalized as stop
++ trill. Otherwise, voiced stops normalized as taps.
+
+\textbf{Ngardily}
 
 \fullcite{green_ngardily_1988}
 
-\textbf{Ngarinyman}\\
-CHIRILA source: CHIRILA/not\_released/ASEDA0796
+\textbf{Ngarinyman}
 
 \fullcite{jones_ngarinman_2005}
 
-\textbf{Ngarla}\\
-CHIRILA source: CHIRILA/not\_released/ASEDA0060
+\textbf{Ngarla}
 
 \fullcite{brown_ngarla-english_nodate}
 
-\textbf{Ngarluma}\\
-CHIRILA source: CHIRILA/not\_released/ASEDA0037
+\textbf{Ngarluma}
 
 \fullcite{hale_ngarluma_1989}
 
-\textbf{Ngawun}\\
+\textbf{Ngawun}
+
 CHIRILA source: CHIRILA/v2/BreenMayi
 
 \fullcite{breen_mayi_1981}
 
-\textbf{Ngiyambaa}\\
-CHIRILA source: CHIRILA/v1/don-lex
+\textbf{Nhanta}
 
-\fullcite{donaldson_ngiyambaa_1997}
-
-\textbf{Nhanda}\\
 CHIRILA source: CHIRILA/v1/ble01
 
 \fullcite{blevins_nhanda:_2001}
 
-\textbf{Nhangu}\\
+\textbf{Yannhangu}
+
 CHIRILA source: CHIRILA/v1/CB-fieldnotes
 
 \fullcite{james_yan-nhangu_2003}
 
-\textbf{Nhirrpi}\\
+\textbf{Nhirrpi}
+
 CHIRILA source: CHIRILA/v1/bow-nhi
 
 \fullcite{bowern_nhirrpi_1999}
 
-\textbf{Nukunu}\\
+\textbf{Nukunu}
+
 CHIRILA source: CHIRILA/v2/her92
 
 \fullcite{hercus_nukunu_1992}
 
-\textbf{Nyamal}\\
+Phonemic normalization: Voiced retroflex stop normalized to retroflex
+tap.
+
+\textbf{Nyamal}
+
 \fullcite{burgman_nyamal_2007}
 
-\textbf{Nyangumarta}\\
-CHIRILA source: CHIRILA/not\_released/ASEDA0217
+\textbf{Nyangumarta}
 
 \fullcite{geytenbeek_nyangumarta-english_1991}
 
-\textbf{Nyawaygi}\\
+\textbf{Nyawaygi}
+
 \fullcite{dixon_nyawaygi_1983}
 
-\textbf{Nyiyaparli}\\
-CHIRILA source: CHIRILA/not\_released/ASEDA0074
+\textbf{Kunjen}
 
-\fullcite{ogrady_nyiyabali_1988}
-
-\textbf{Ogh Unyjan}\\
 \fullcite{sommer_ogh_nodate-1}
 
-\textbf{Olkol}\\
+\textbf{Olkola}
+
 \fullcite{hamilton_uw_1997}
 
-\textbf{Oykangand}\\
+\textbf{UwOykangand}
+
 \fullcite{hamilton_uw_1997}
 
-\textbf{Panyjima}\\
-CHIRILA source: CHIRILA/not\_released/ASEDA0375
+\textbf{Panyjima}
 
 \fullcite{dench_panyjima_1991-1}
 
-\textbf{Payungu}\\
+\textbf{Payungu}
+
 CHIRILA source: CHIRILA/v1/ASEDA0394
 
 \fullcite{austin_payungu_nodate}
 
-\textbf{Pintupi}\\
+\textbf{PintupiLuritja}
+
 \fullcite{hansen_pintupi/luritja_1992}
 
-\textbf{Pitta Pitta}\\
+\textbf{PittaPitta}
+
 CHIRILA source: CHIRILA/v1/bla0275
 
 \fullcite{blake_pitta_1990}
 
-\textbf{Purduna}\\
+\textbf{Purduna}
+
 \fullcite{burgman_burduna_2007}
 
-\textbf{Ritharrngu}\\
+\textbf{Ritharrngu}
+
 CHIRILA source: CHIRILA/v1/Heath
 
 \fullcite{heath_ritharngu_1976}
 
-\textbf{Southern Paakintyi}\\
-CHIRILA source: CHIRILA/not\_released/ASEDA0525
+\textbf{Paakantyi}
 
 \fullcite{hercus_paakantyi_nodate}
 
-\textbf{Thaayorre}\\
-\fullcite{foote_kuuk_1995}
+\textbf{KuukThaayorre}
 
-\textbf{Thalanyji}\\
+\fullcite{foote_kuuk_1993}
+
+\textbf{Thalanyji}
+
 CHIRILA source: CHIRILA/v2/ASEDA0437
 
 \fullcite{austin_dictionary_nodate-2}
 
-\textbf{Tharrkari}\\
-\fullcite{austin_dictionary_1992}
+\textbf{Tharrgari}
 
-\textbf{Thaynakwithi}\\
+\fullcite{austin_dictionary_1992-1}
+
+\textbf{Thaynakwith}
+
 \fullcite{fletcher_thanakupis_2007}
 
-\textbf{Umpila}\\
-CHIRILA source: CHIRILA/not\_released/ASEDA0094
+\textbf{Umpila}
 
 \fullcite{ogrady_umpila_1988}
 
-\textbf{Waalubal}\\
+\textbf{Bandjalang}
+
 CHIRILA source: CHIRILA/v1/cro78
 
 \fullcite{crowley_middle_1978}
 
-\textbf{Walmajarri}\\
-CHIRILA source: CHIRILA/not\_released/ASEDA0167
+\textbf{WalmajarriHR}
 
 \fullcite{hudson_walmajarri_1993}
 
-\textbf{Wangkajunga}\\
-CHIRILA source: CHIRILA/not\_released/ASEDA0709
+\textbf{Wangkatja}
 
 \fullcite{blyth_wangka_2001}
 
-\textbf{Wangkumara}\\
+\textbf{Wangkumara}
+
 CHIRILA source: CHIRILA/v1/robnd
 
 \fullcite{robertson_wangkumara_1985}
 
-\textbf{Warlmanpa}\\
-CHIRILA source: CHIRILA/not\_released/ASEDA0049
+Phonemic normalization: Double a normalized to long vowel.
+
+\textbf{Warlmanpa}
 
 \fullcite{nash_preliminary_1984}
 
-\textbf{Warlpiri}\\
+\textbf{Warlpiri}
+
 CHIRILA source: CHIRILA/v2/WarlpiriDict
 
 \fullcite{schwartz_walpiri_1996}
 
-\textbf{Warluwarra}\\
-CHIRILA source: CHIRILA/not\_released/ASEDA0253
+\textbf{Warluwarra}
 
 \fullcite{breen_warluwara_1990}
 
-\textbf{Warnman}\\
+Phonemic normalization: Prenasalized stops normalized to nasal + lenis
+stop. Tense glides normalized to fricatives. Tense lateral normalized to
+double lateral.
+
+\textbf{Warnman}
+
 CHIRILA source: CHIRILA/v2/ASEDA0334
 
 \fullcite{eidwun_warnman_nodate}
 
-\textbf{Warrgamay}\\
+\textbf{Wargamay}
+
 CHIRILA source: CHIRILA/v1/dixbla81
 
 \fullcite{dixon_wargamay_1981}
 
-\textbf{Warriyangga}\\
-CHIRILA source: CHIRILA/not\_released/ASEDA0439
+\textbf{Warriyangga}
 
 \fullcite{austin_dictionary_nodate-3}
 
-\textbf{Watjarri}\\
+\textbf{Wajarri}
+
 \fullcite{mackman_wajarri_2012}
 
-\textbf{Wayilwan}\\
-CHIRILA source: CHIRILA/v2/Wail-lex
-
-\fullcite{donaldson_wailwan_nodate}
-
-\textbf{Wemba Wemba}\\
-CHIRILA source: CHIRILA/not\_released/herw
+\textbf{WembaWemba}
 
 \fullcite{hercus_wembawemba_1992}
 
-\textbf{Western Anmatyerre}\\
-CHIRILA source: CHIRILA/not\_released/gre03ca
-
-\fullcite{green_central_2003}
-
-\textbf{Western Arrernte}\\
-CHIRILA source: CHIRILA/not\_released/bre00
+\textbf{WesternArrarnta}
 
 \fullcite{breen_introductory_2000}
 
-\textbf{Western Wakaya}\\
-CHIRILA source: CHIRILA/not\_released/ASEDA0047
+Phonemic normalization: Labialized consonants normalized to C + w.
+Prestopped nasals normalized to stop + nasal sequence. Prepalatalized
+consonants normalized to j + C.
+
+\textbf{Wakaya}
 
 \fullcite{breen_wakaya_2006}
 
-\textbf{Wik Mungkan}\\
+\textbf{WikMungkan}
+
 \fullcite{kilham_wik_2011}
 
-\textbf{Wiradjuri}\\
-CHIRILA source: CHIRILA/v2/Hosking/McNicol1993
-
-\fullcite{hosking_wiradjuri_1993}
-
-\textbf{Wirangu}\\
-CHIRILA source: CHIRILA/not\_released/Her99
+\textbf{Wirangu}
 
 \fullcite{hercus_grammar_1999}
 
-\textbf{Wulguru}\\
-CHIRILA source: CHIRILA/not\_released/Don07
+Phonemic normalization: Double a normalized to long vowel.
 
-\fullcite{donohue_wulguru:_2007}
+\textbf{Yadhaykenu}
 
-\textbf{Yadhaykenu}\\
 \fullcite{crowley_uradhi_1983}
 
-\textbf{Yalarnnga}\\
+\textbf{Yalarnnga}
+
 CHIRILA source: CHIRILA/v1/ASEDA0204
 
 \fullcite{breen_yalarnnga_nodate}
 
-\textbf{Yandruwandha}\\
+\textbf{Yandruwandha}
+
 CHIRILA source: CHIRILA/v1/breyandr
 
-\textbf{Yanyuwa}\\
-CHIRILA source: CHIRILA/not\_released/ASEDA0382
+\fullcite{breen_innamincka_2004}
+
+Phonemic normalization: Trill-released stop normalized as stop + trill.
+Prestopped laterals normalized to stop + lateral sequence.
+
+\textbf{Yanyuwa}
 
 \fullcite{bradley_yanyuwa_nodate}
 
-\textbf{Yarluyandi}\\
+Phonemic normalization: Prenasalized stops normalized to nasal + stop
+sequence.
+
+\textbf{Yarluyandi}
+
 CHIRILA source: CHIRILA/v1/ASEDA0251
 
 \fullcite{hercus_yarluyandi_nodate}
 
-\textbf{Yaygir}\\
+\textbf{Yaygirr}
+
 CHIRILA source: CHIRILA/v1/morelli2011
 
 \fullcite{morelli_yaygirr_2012}
 
-\textbf{Yidiny}\\
+\textbf{Yidiny}
+
 CHIRILA source: CHIRILA/v2/dix91
 
 \fullcite{dixon_words_1991}
 
-\textbf{Yindjibarndi}\\
-CHIRILA source: CHIRILA/not\_released/ASEDA0297
+\textbf{Yindjibarndi}
 
 \fullcite{anderson_yindjibarndi_nodate}
 
-\textbf{Yingkarta}\\
-CHIRILA source: CHIRILA/not\_released/ASEDA0440
+\textbf{Yinhawangka}
 
-\fullcite{austin_dictionary_nodate}
-
-\textbf{Yinhawangka}\\
 \fullcite{wangka_maya_pilbara_aboriginal_language_centre_yinhawangka_2008}
 
-\textbf{Yir Yoront}\\
-CHIRILA source: CHIRILA/not\_released/alp91
+\textbf{YirYoront}
 
 \fullcite{alpher_yir-yoront_1991}
 
-\textbf{Yorta Yorta}\\
+\textbf{YortaYorta}
+
 CHIRILA source: CHIRILA/v1/bowmor99
 
 \fullcite{bowe_yorta_1999}
 
-\textbf{Yulparija}\\
-CHIRILA source: CHIRILA/not\_released/ASEDA0032/0087
+\textbf{Yulparija}
 
 \fullcite{mckelson_yulparija_1989}
 
-\textbf{Yuwaalaraay}\\
+\textbf{Yuwaalaraay}
+
 CHIRILA source: CHIRILA/v1/ash03
 
 \fullcite{ash_gamilaraay_2003}
@@ -643,17 +650,20 @@ CHIRILA source: CHIRILA/v1/ash03
 \newpage
 
 \hypertarget{guide-to-code-and-data}{%
-\section{Guide to code and data}\label{guide-to-code-and-data}}
+\subsection{Guide to code and
+data}\label{guide-to-code-and-data}}
 
 The code and data used in this study are publicly accessible on Zenodo
 at \url{http://doi.org/10.5281/zenodo.3610089}. Unzipping the file
 reveals a directory containing five subdirectories, \texttt{/trees},
 \texttt{/data}, \texttt{/R}, \texttt{/results} and \texttt{/fig}.
 
-The \texttt{/trees} subdirectory contains just one file,
-\texttt{PN\_SDollo\_sum.nex}, which is a Nexus format tree file for the
-Pama-Nyungan reference phylogeny used throughout the study. For more
-details on the reference phylogeny, see A.2.1.3 above.
+The \texttt{/trees} subdirectory contains two files:
+\texttt{PNY10\_285.(time).sum.tree}, which is a Nexus format tree file
+for the Pama-Nyungan maximum clade credibility tree used as a reference
+tree throughout the study. \texttt{PNY10\_285.trees} contains the full
+posterior sample of trees and was used to check the robustness of our
+results against phylogenetic uncertainty.
 
 The \texttt{/data} subdirectory contains 9 comma-separated (csv)
 spreadsheets containing all the frequency data used in the study. In all
@@ -688,7 +698,7 @@ for the study and create figures for the main text of the paper. The
 \texttt{analysis.R} script is written to run in \emph{R} statistical
 software \autocite{r_core_team_r_2017}. To run the analysis, the first
 step is to set the \emph{R} working directory to the \texttt{/R}
-subdirectory. It is important to keep the file structure of the A.2.2
+subdirectory. It is important to keep the file structure of the S2
 directory intact, since the script requires access to the \texttt{data},
 \texttt{trees} and \texttt{results} subdirectories. The first lines of
 the script load all its required packages. If any packages are missing
@@ -702,15 +712,13 @@ console. The script can be run from the R console using the command
 memory, with the following R session info:
 
 \begin{verbatim}
-R version 3.5.1 (2018-07-02)
+R version 3.6.2 (2019-12-12)
 Platform: x86_64-apple-darwin15.6.0 (64-bit)
-Running under: macOS Sierra 10.12.6
+Running under: macOS Catalina 10.15.4
 
 Matrix products: default
-BLAS: /System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/
-vecLib.framework/Versions/A/libBLAS.dylib
-LAPACK: /Library/Frameworks/R.framework/Versions/3.5/Resources/lib/
-libRlapack.dylib
+BLAS:   /System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libBLAS.dylib
+LAPACK: /Library/Frameworks/R.framework/Versions/3.6/Resources/lib/libRlapack.dylib
 
 locale:
 [1] en_AU.UTF-8/en_AU.UTF-8/en_AU.UTF-8/C/en_AU.UTF-8/en_AU.UTF-8
@@ -719,39 +727,41 @@ attached base packages:
 [1] stats     graphics  grDevices utils     datasets  methods   base     
 
 other attached packages:
- [1] kSamples_1.2-9    SuppDists_1.1-9.4 phylosignal_1.2.1 phylobase_0.8.6  
- [5] rcompanion_2.3.7  picante_1.8       nlme_3.1-137      vegan_2.5-6      
- [9] lattice_0.20-35   permute_0.9-5     e1071_1.7-0       reshape2_1.4.3   
-[13] caper_1.0.1       mvtnorm_1.0-11    MASS_7.3-50       ape_5.3          
-[17] forcats_0.3.0     stringr_1.4.0     dplyr_0.8.0.1     purrr_0.3.2      
-[21] readr_1.1.1       tidyr_0.8.1       tibble_2.1.3      ggplot2_3.2.1    
-[25] tidyverse_1.2.1  
+ [1] kSamples_1.2-9    SuppDists_1.1-9.5 phylosignal_1.3   phylobase_0.8.10 
+ [5] rcompanion_2.3.25 picante_1.8.1     nlme_3.1-145      vegan_2.5-6      
+ [9] lattice_0.20-40   permute_0.9-5     e1071_1.7-3       reshape2_1.4.3   
+[13] caper_1.0.1       mvtnorm_1.1-0     MASS_7.3-51.5     ape_5.3          
+[17] forcats_0.5.0     stringr_1.4.0     dplyr_0.8.4       purrr_0.3.3      
+[21] readr_1.3.1       tidyr_1.0.2       tibble_2.1.3      ggplot2_3.3.0    
+[25] tidyverse_1.3.0  
 
 loaded via a namespace (and not attached):
- [1] TH.data_1.0-10     colorspace_1.3-2   seqinr_3.6-1       deldir_0.1-23     
- [5] class_7.3-14       modeltools_0.2-22  rstudioapi_0.8     lubridate_1.7.4   
- [9] coin_1.3-1         xml2_1.2.0         codetools_0.2-15   splines_3.5.1     
-[13] knitr_1.22         libcoin_1.0-5      ade4_1.7-13        jsonlite_1.6      
-[17] broom_0.5.0        cluster_2.0.7-1    shiny_1.2.0        compiler_3.5.1    
-[21] httr_1.3.1         backports_1.1.2    assertthat_0.2.0   Matrix_1.2-14     
-[25] lazyeval_0.2.2     cli_1.1.0          later_0.7.5        htmltools_0.3.6   
-[29] prettyunits_1.0.2  tools_3.5.1        igraph_1.2.2       coda_0.19-1       
-[33] gtable_0.2.0       glue_1.3.1         gmodels_2.18.1     Rcpp_1.0.1        
-[37] cellranger_1.1.0   spdep_1.1-3        gdata_2.18.0       lmtest_0.9-37     
-[41] xfun_0.5           adephylo_1.1-11    rvest_0.3.2        mime_0.6          
-[45] gtools_3.8.1       XML_3.98-1.13      LearnBayes_2.15.1  zoo_1.8-6         
-[49] scales_1.0.0       hms_0.4.2          promises_1.0.1     parallel_3.5.1    
-[53] sandwich_2.5-1     expm_0.999-2       yaml_2.2.0         EMT_1.1           
-[57] stringi_1.4.3      nortest_1.0-4      boot_1.3-20        spData_0.2.9.4    
-[61] rlang_0.4.0        pkgconfig_2.0.2    matrixStats_0.55.0 rncl_0.8.3        
-[65] evaluate_0.13      sf_0.6-3           tidyselect_0.2.5   plyr_1.8.4        
-[69] magrittr_1.5       R6_2.4.0           DescTools_0.99.29  multcompView_0.1-7
-[73] multcomp_1.4-10    DBI_1.0.0          pillar_1.3.1       haven_1.1.2       
-[77] withr_2.1.2        mgcv_1.8-24        units_0.6-1        survival_2.42-6   
-[81] sp_1.3-1           modelr_0.1.2       crayon_1.3.4       uuid_0.1-2        
-[85] rmarkdown_1.12     progress_1.2.2     RNeXML_2.3.0       adegenet_2.1.1    
-[89] grid_3.5.1         readxl_1.1.0       digest_0.6.18      classInt_0.2-3    
-[93] xtable_1.8-3       httpuv_1.4.5       stats4_3.5.1       munsell_0.5.0       
+  [1] TH.data_1.0-10     colorspace_1.4-1   deldir_0.1-25      seqinr_3.6-1      
+  [5] class_7.3-15       modeltools_0.2-23  fs_1.3.2           rstudioapi_0.11   
+  [9] fansi_0.4.1        lubridate_1.7.4    coin_1.3-1         xml2_1.2.2        
+ [13] codetools_0.2-16   splines_3.6.2      libcoin_1.0-5      ade4_1.7-15       
+ [17] jsonlite_1.6.1     broom_0.5.5        cluster_2.1.0      dbplyr_1.4.2      
+ [21] shiny_1.4.0        compiler_3.6.2     httr_1.4.1         backports_1.1.5   
+ [25] assertthat_0.2.1   Matrix_1.2-18      fastmap_1.0.1      lazyeval_0.2.2    
+ [29] cli_2.0.2          later_1.0.0        htmltools_0.4.0    prettyunits_1.1.1 
+ [33] tools_3.6.2        igraph_1.2.4.2     coda_0.19-3        gtable_0.3.0      
+ [37] glue_1.3.1         gmodels_2.18.1     Rcpp_1.0.3         raster_3.0-12     
+ [41] cellranger_1.1.0   vctrs_0.2.3        spdep_1.1-3        gdata_2.18.0      
+ [45] lmtest_0.9-37      adephylo_1.1-11    rvest_0.3.5        mime_0.9          
+ [49] lifecycle_0.1.0    gtools_3.8.1       XML_3.99-0.3       LearnBayes_2.15.1 
+ [53] zoo_1.8-7          scales_1.1.0       hms_0.5.3          promises_1.1.0    
+ [57] parallel_3.6.2     sandwich_2.5-1     expm_0.999-4       EMT_1.1           
+ [61] stringi_1.4.6      nortest_1.0-4      boot_1.3-24        spData_0.3.3      
+ [65] rlang_0.4.5        pkgconfig_2.0.3    matrixStats_0.56.0 rncl_0.8.4        
+ [69] sf_0.8-1           tidyselect_1.0.0   plyr_1.8.6         magrittr_1.5      
+ [73] R6_2.4.1           DescTools_0.99.34  generics_0.0.2     multcompView_0.1-8
+ [77] multcomp_1.4-12    DBI_1.1.0          pillar_1.4.3       haven_2.2.0       
+ [81] withr_2.1.2        mgcv_1.8-31        units_0.6-6        sp_1.4-1          
+ [85] survival_3.1-8     modelr_0.1.6       crayon_1.3.4       KernSmooth_2.23-16
+ [89] uuid_0.1-4         progress_1.2.2     RNeXML_2.4.3       adegenet_2.1.2    
+ [93] grid_3.6.2         readxl_1.3.1       classInt_0.4-2     reprex_0.3.0      
+ [97] digest_0.6.25      xtable_1.8-4       httpuv_1.5.2       stats4_3.6.2      
+[101] munsell_0.5.0       
 \end{verbatim}
 
 Note that the \texttt{analysis.R} script contains the minimum script
@@ -772,27 +782,36 @@ rather than a single character at a time). This script is read by the
 \texttt{analysis.R} script. Nothing needs to be done directly in the R
 console.
 
+The script \texttt{tree\_uncertainty.R} contains code for replicating
+part of the study (place and manner sound class characters) on a
+100-tree subset of the posterior sample contained in
+\texttt{PN\_SDollo.nex}. Its runtime is around 9.5 hours on the same
+machine described above. The script
+\texttt{wordlist\_size\_uncertainty.R} contains code for replicating the
+same part of the study on two subsets of languages: The middle 50\% of
+wordlists when ranked by size and every 2nd wordlist when ranked by
+size. The runtime for this script is around 20 minutes. Note that due to
+random permutations in the methodology, exact replication is only
+possible if a random seed is set. To ensure the seed is set at the
+correct time, each script should be run in a clean R session.
+Alternatively, the analysis can be reproduced with new random numbers by
+changing or removing the \texttt{set.seed} command. Although we expect
+the overall results of the study to remain the same, there will be
+slight differences in values that rely on stochastic processes for their
+calculation (for example, \(p\) values that are calculated via
+bootstrapping).
+
 Finally, the \texttt{create\_figs.R} script contains code used to
 produce figures for the main text body. The script saves each figure as
 a PDF file in the \texttt{/fig} subdirectory. Figures are produced with
 the \texttt{ggplot2} package, using the system of visualisation
-described by \textcite{wilkinson_grammar_2005}. Both \texttt{analysis.R}
-and \texttt{create\_figs.R} contain a command which sets a seed number
-for random number generation. This is done for reproducability. As long
-as the seed number is set to a certain value for a given R session,
-stochastic processes in the scripts will be reproduced exactly the same
-every time. The analysis can be reproduced with new random numbers by
-changing or removing the \texttt{set.seed} command. Although we expect
-the overall results of the study to remain the same, there will be
-slight differences in values that rely on stochastic processes for their
-calculation (for example, \(p\) values that are produced with random
-permutations).
+described by \textcite{wilkinson_grammar_2005}.
 
 The \texttt{/results} subdirectory contains original csv spreadsheets of
 results, generated as output from \texttt{analysis.R} and used in the
 study. Results from the \(D\) test for phylogenetic signal in binary
 phonotactic data are contained in the spreadsheet
-\texttt{D\_test\_results\_2019-12-17.csv}. The \texttt{biphone} column
+\texttt{D\_test\_results\_2020-06-06.csv}. The \texttt{biphone} column
 lists the biphone character tested. Note that the underscore in each
 biphone label is purely to aid readability and carries no linguistic
 meaning (it is not intended to look like the environment of a generative
@@ -812,22 +831,62 @@ be consistent with the null hypothesis, either the phylogenetic null
 hypothesis (\(D = 0\)) or randomness null hypothesis (\(D = 1\)).
 Finally, the \texttt{result} column gives an overall interpretation of
 the result of the \(D\) test and two accompanying \(p\) values. There
-are six possible categories a character may fall into: (i) More clumped
-than the phylogenetic null hypothesis, listed as \texttt{more\ clumped};
-(ii) consistent with the phylogenetic null hypothesis and more clumped
-than the random null hypothesis (i.e.~there is significant phylogenetic
-signal), listed as \texttt{phylogenetic}; (iii) consistent with both
-null hypotheses, so a result cannot be determined either way, listed as
-\texttt{indeterminate\ (neither\ H0\ rejected)}; (iv) inconsistent with
-both null hypotheses, and \(0 < D < 1\), listed as
-\texttt{0\ \textless{}\ D\ \textless{}\ 1\ (both\ H0s\ rejected)}; (v)
-consistent with the randomness null hypothesis and more dispersed than
-the phylogenetic null hypothesis, listed as \texttt{random}. There is a
-sixth possible category a character can fall into, which is written into
-the \texttt{analysis.R} script: more dispersed than the randomness null
-hypothesis, listed as \texttt{more\ dispersed}. However, in this study,
-we find no characters that fall into this category and thus it does not
-appear in the spreadsheet of results.
+are six possible categories a character may fall into:
+
+\begin{itemize}
+\item
+  \begin{enumerate}
+  \def\labelenumi{(\roman{enumi})}
+  \tightlist
+  \item
+    More clumped than the phylogenetic null hypothesis, listed as
+    \texttt{more\ clumped}.
+  \end{enumerate}
+\item
+  \begin{enumerate}
+  \def\labelenumi{(\roman{enumi})}
+  \setcounter{enumi}{1}
+  \tightlist
+  \item
+    consistent with the phylogenetic null hypothesis and more clumped
+    than the random null hypothesis (i.e.~there is significant
+    phylogenetic signal), listed as \texttt{phylogenetic}.
+  \end{enumerate}
+\item
+  \begin{enumerate}
+  \def\labelenumi{(\roman{enumi})}
+  \setcounter{enumi}{2}
+  \tightlist
+  \item
+    consistent with both null hypotheses, so a result cannot be
+    determined either way, listed as
+    \texttt{indeterminate\ (neither\ H0\ rejected)}.
+  \end{enumerate}
+\item
+  \begin{enumerate}
+  \def\labelenumi{(\roman{enumi})}
+  \setcounter{enumi}{3}
+  \tightlist
+  \item
+    inconsistent with both null hypotheses, and \(0 < D < 1\), listed as
+    \texttt{0\ \textless{}\ D\ \textless{}\ 1\ (both\ H0s\ rejected)}.
+  \end{enumerate}
+\item
+  \begin{enumerate}
+  \def\labelenumi{(\alph{enumi})}
+  \setcounter{enumi}{21}
+  \tightlist
+  \item
+    consistent with the randomness null hypothesis and more dispersed
+    than the phylogenetic null hypothesis, listed as \texttt{random}.
+  \end{enumerate}
+\end{itemize}
+
+The sixth possible category a character can fall into, which is written
+into the \texttt{analysis.R} script, is: more dispersed than the
+randomness null hypothesis, listed as \texttt{more\ dispersed}. However,
+in this study, we find no characters that fall into this category and
+thus it does not appear in the spreadsheet of results.
 
 Results files for the \(K\) tests are given in spreadsheets named
 according to the format
@@ -838,6 +897,8 @@ backward transition frequencies. For natural class-based characters,
 there are two spreadsheets corresponding to forward and backward
 transition frequencies for each of three class types: manner, place and
 major place.
+
+\newpage
 
 \section*{References}
 
