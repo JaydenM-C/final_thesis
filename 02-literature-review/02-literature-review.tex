@@ -5,10 +5,73 @@
 % Literature Review
 % ***************************************************
 
-\section{Your thesis topic}
-%Replace "Your thesis topic" with what will become the \label{} for this section.
+This chapter still requires a bit of work, probably the most work of all the chapters in terms of pure writing. I realise this is a bit back-to-front for a PhD thesis. Without wanting to make excuses, this is partly because I already had to incorporate a lot of literature-review-like content in the next three chapters themselves (so they could stand alone as publications). It's also partly a consequence of the literature itself evolving so rapidly even during my candidature. For example, known timespan of human occupation in Australia has roughly doubled since I started my PhD program.
 
-% ********* Enter your text below this line: ********
-Introduce your topic.
+Nevertheless, the thesis requires a broad contextualisation. Needless to say, I've got a big library of references and lot of bits of scattered writing to pull together. Writing will be a bit slower due to the nature of literature review writing (following up secondary references etc.). Realistically, it might take me 1 month to pull together a really high quality, in-depth literature from here. Maybe less in a pinch.
+
+General structure:
+
+\begin{itemize}
+\tightlist
+\item
+  background, interest
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Sahul context
+  \end{itemize}
+\item
+  historical linguistics
+\item
+  linguistic comparison
+\item
+  phylogenetic methods
+\end{itemize}
+
+Simon's old comments to remember:
+
+\begin{itemize}
+\tightlist
+\item
+  incorporate targeted historical linguistics
+\item
+  incorporate criticism of phylogenetic methods
+\end{itemize}
+
+\emph{Note to self:} Think of better chapter name.
+
+\hypertarget{motivations}{%
+\section{Motivations}\label{motivations}}
+
+\hypertarget{sahul-context}{%
+\subsection{Sahul context}\label{sahul-context}}
+
+This thesis concentrates on languages of Australia, and in Chapters 5 and 6 on Pama-Nyungan languages specifically. However, it's really laying out some groundwork in the service of bigger questions. We don't especially learn anything new about Pama-Nyungan's phylogeny in this thesis, but the family serves as a test case from which we could springboard off into the rest of the continent where less is known phylogenetically.
+
+Brief note on the geology and geography of Sahul and how it has changed through the ages.
+
+History of human occupation. Theories for the peopling of Sahul and existing work triangulating archaeological, linguistic and genomic evidence.
+
+The linguistic prehistory of Sahul, the continent of Australia and New Guinea, is an enigma which is mostly yet to be cracked by historical linguistics. The question of if and how Australian languages might relate to their Papuan neighbours to the north has been the subject of speculation for many years \autocites[e.g.][]{ogrady_languages_1966}{wurm_papuan_1975}. But, besides a handful of tentative cognates \autocite{foley_papuan_1986} and shared structural features \autocite{nichols_sprung_1997} Reesink, Singer, \& Dunn, 2009), conclusive evidence for a connection remains elusive. Notwithstanding the many small-scale language families (plus two large ones---Pama-Nyungan and Trans-New Guinea) which have been successfully identified via the standard comparative method in historical linguistics, the diagnosis of deeper historical relations is handicapped by several factors in this part of the world: A lack of adequate description \autocite{bowern_computational_2012}, absence of pre-colonial written sources \autocite{foley_papuan_1986}, apparent homogeneity of phonological systems \autocite{baker_word_2014} and millennia of extensive horizontal diffusion \autocites{foley_papuan_1986}{dixon_australian_2002} to name a few. Even in ideal circumstances, the scope of the linguistic comparative method is commonly cited as being limited to approximately ten thousand years, at which point historical signal becomes indistinguishable from noise in lexical data \autocite{nichols_sprung_1997}. This limits the method to a window of time well after rising seas inundated Lake Carpentaria approximately 12,000 years ago and only just before the inundation of Torres Strait approximately 8000 years ago.
+
+Recent advances give cause for optimism that we may be able to extend the time-depth at which historical linguistics can operate and unravel something of the prehistory of Sahul. Methodological advances include the adaptation of Bayesian phylogenetic methods to infer the evolutionary history of language families. For example, \textcite{bowern_computational_2012} and subsequently \textcite{bouckaert_origin_2018} use phylogenetic methods, in combination with cognate identification via the traditional comparative method, to infer the internal branching of the Pama-Nyungan family. As for data, and the possible erosion of historical signal after 10,000 years in lexical data specifically, two observations motivate the approach of the present study: Firstly, linguistics has well and truly entered `the age of big data' and computational methods now enable us to extract minute threads of significance from large volumes of data. This enables us to compare more data points across wider groups of languages quickly and efficiently, and identify trends and correlations which would otherwise escape the attention of even the most highly trained human eye. This thesis evaluates the profitability of complemneting lexical data (which continues to form the backbone of most historical linguistic work) with other kinds of data too.
+
+\hypertarget{phylogenetic-thinking-in-historical-linguistics}{%
+\section{Phylogenetic thinking in historical linguistics}\label{phylogenetic-thinking-in-historical-linguistics}}
+
+This section is old and needs refinement.
+
+The first to suggest an analogous relationship between the evolution of languages through time and Darwin's theory of evolution in the biological world was, in fact, Darwin himself \autocite{darwin_origin_1859}. Although we now know a great deal more about the important differences between linguistic and biological evolution, Darwin's \autocite{darwin_descent_1888} description of the two processes as ``curiously parallel'' remains an oft quoted starting point for discussion of evolutionary matters in linguistics \autocite[e.g.][]{atkinson_curious_2005}. Interestingly, the representation of linguistic history in the form of a tree-like structure arguably predates such representations of biological history, with \textcite{schleicher_darwinsche_1863} pointing out that he made use of tree-like representations of languages himself, some years prior to Darwin.
+
+Methodologies in linguistic and biological fields would subsequently diverge in the twentieth century. Methodological developments, such as the utilization of Mendelian inheritance values to model evolution and the eventual mapping of the structure of DNA, resulted in evolutionary biology taking a distinctly quantitative turn. Increasingly, researchers would turn to powerful algorithms and large volumes of data to infer phylogenetic relationships {[}\textcite{atkinson_cuious_2005}. In contrast, historical linguistics has tended towards more qualitative methods and datasets which rely to a large extent on the manual, expert judgements by the linguist \autocite{nunn_comparative_2011}. Illustrating this is the linguistic comparative method, arguably the bedrock historical linguistics to this day. This method, to summarise very briefly following \textcite{thomason_language_1992}, consists of a number of painstaking steps requiring a good deal of time and expertise in the languages of study: First, sound correspondences are established. This enables the identification of cognates---words of shared historical origin---which then form the basis for the reconstruction of proto-languages and establishment of diversification patterns through time.
+
+One quantitative method which stands out in this period is the lexicostatistical method, developed by \textcite{swadesh_lexico-statistic_1952}. `Lexicostatistics' infers relatedness among languages by quantifying percentages of cognates and using these figures with clustering algorithms. \textcite{swadesh_towards_1955} also established `glottochronology' as a mechanism for dating linguistic divergence events, which calculates the length of branches on a family tree by assuming an accumulation of lexical replacement at a constant rate through time. These methods were ultimately disfavoured, owing in part to disproval of Swadesh's `universal constant' theory of lexical replacement, a key assumption underlying glottochronology \autocite{blust_why_2000}, and an inability to quantify a level of uncertainty in the results \autocite{atkinson_curious_2005}.
+
+Since the turn of the 21st century, there has been a resurgence of interest in the adaptation of phylogenetic methods from evolutionary biology to answer questions of historical linguistics, driven by factors including technological advances and accessibility, availability of large and open data, and a general desire for greater empirical rigour in the field \autocites{atkinson_curious_2005}{mcmahon_finding_2003}{nunn_comparative_2011}. However, these developments have not been embraced by all in the field. Perhaps an artifact of glottochronology's scarred legacy, \textcite[p.~520]{atkinson_curious_2005} describe a ``curious aversion'' to large-scale quantitative studies and the adoption of phylogenetic methods in historical linguistics. A reoccurring stream of criticism is predicated on the limitations (or even total inadequacy) of a family-tree based model which only shows vertical patterns of inheritance and not horizontal diffusion, e.g.~through linguistic contact and borrowing (\textcite{bateman_speaking_1990}; \textcite{donohue_new_2012}; \textcite{gould_urchin_2010}). Countering these concerns, \textcite{bowern_historical_2010} claims that this is confusing the family tree, which is essentially a visualization tool, with the methods themselves. Further, while there is still much work to be done (and not only in linguistics), phylogenetic methods are capable of modelling assumptions about horizontal admixture, not to mention quantifying uncertainty. In addition, \textcite{greenhill_does_2009} conduct a simulation study to test whether phylogenetic methods are invalidated by horizontal diffusion. They find that, to the contrary, their Bayesian phylogenetic method of choice is quite robust to areal borrowing between languages (albeit with some caveats relating to dating phylogenetic branches).
+
+An additional criticism relates to the suitability of linguistic data for phylogenetic algorithms: Of specific concern is the ability (or otherwise) to reduce hugely complex linguistic systems into neat datasets of numerical or binarized characters without excessively compromising the dataset's ability to be meaningful and informative in a linguistic sense; and further, the question of whether linguistic variables can be assumed to be independent and equivalent to the degree required of phylogenetic algorithms, given the complex interplay between linguistic features and non-random, directional patterns of linguistic change that can be observed \autocite{heggarty_interdisciplinary_2006}. These are, to a large extent, live concerns which need further consideration and theoretical development. This thesis aims to contribute in this regard, by paying close attention to these questions as they relate to comparative study of languages in Sahul.
+
+In summary, similarities between linguistic evolution and biological evolution have been noted for as long as phylogenetic trees have existed---indeed, the history of these academic fields is somewhat intertwined. However, only in more recent times have linguists returned to the methods of evolutionary biology, harnessing the inferential economy of sophisticated phylogenetic algorithms and large datasets. This is a rapidly developing field with potential to generate certain historical linguistic hypotheses which lay out of reach of the traditional comparative methods. Nevertheless, debate continues over the validity of applying phylogenetic methods to linguistic data \autocite[e.g.][]{heggarty_interdisciplinary_2006}. This discussion is important, and need not result in dichotomized `for' and `against' camps of thought. This thesis follows \textcite[p.~2299]{greenhill_does_2009}, who suggest that rather than engaging in ``armchair speculation'' on the suitability of phylogenetic methods ``on a priori grounds'', it is more beneficial to engage with these methods and linguistic theory, crunch the numbers, and quantify how useful (or otherwise) given methods are for testing various historical hypotheses.
 
 % ***************************************************
