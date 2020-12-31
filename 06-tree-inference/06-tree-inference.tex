@@ -157,7 +157,7 @@ With regards to the clock model, site models paired with a relaxed clock tend to
 
 \begin{sidewaystable}
 
-\caption{\label{tab:site-models}Bayes factors for different site models. Each Bayes Factor represents the support for one model (vertical axis) against another (horizontal). A positive value indicates the first model (left) is supported, and conversely, a negative value indicates the second model (top) is supported. A value over 100 is considered decisive.}
+\caption[Bayes factors for different site models]{\label{tab:site-models}Bayes factors for different site models. Each Bayes Factor represents the support for one model (vertical axis) against another (horizontal). A positive value indicates the first model (left) is supported, and conversely, a negative value indicates the second model (top) is supported. A value over 100 is considered decisive.}
 \centering
 \fontsize{8}{10}\selectfont
 \begin{tabular}[t]{lrrrrrrrrrrrrrrrr}
@@ -208,7 +208,7 @@ Western Arrernte, the sole representative of the Arandic subgroup, shifts places
 \begin{figure}
 \centering
 \includegraphics{06-tree-inference/fig/cogs_vs_bba2018.pdf}
-\caption{\label{fig:cogs-vs-bba2018}The maximum clade credibility trees of our cognates-only model (left) and the Bouckaert, Bowern \& Atkinson (2018) phylogeny (right). Our model aims to replicate the BBA phylogeny as close as possible, although the language sample is restricted and there are some small model and software differences. Overall, the trees are mostly congruent, which gives reassurance that our baseline model is reliable.}
+\caption[Maximum clade credibility trees of our cognates-only model and the Bouckaert, Bowern \& Atkinson (2018) phylogeny]{\label{fig:cogs-vs-bba2018}The maximum clade credibility trees of our cognates-only model (left) and the Bouckaert, Bowern \& Atkinson (2018) phylogeny (right). Our model aims to replicate the BBA phylogeny as close as possible, although the language sample is restricted and there are some small model and software differences. Overall, the trees are mostly congruent, which gives reassurance that our baseline model is reliable.}
 \end{figure}
 
 \hypertarget{main-test}{%
@@ -237,13 +237,13 @@ One first observation is that the MCMC process in BEAST tends to get stuck in lo
 BEAST computes two marginal likelihood estimates, one via the path sampling method \autocite{baele_improving_2012} and one via the stepping stone sampling method \autocite{baele_accurate_2013}. In normal operation these two estimates should be roughly equivalent. In this instance, the log marginal likelihood estimates for the combined analysis are 598,885 (estimated via path sampling) and 988,231 (estimated via stepping stone sampling). Currently, it is unclear whether or not these log MLE figures are meaningful. Log MLEs for each individual chain vary between 459,380 and 672,466 which is considerably more variation than we would expect, given that a difference of 20 is generally considered significant. Given that all chains represent the same data and model and converge in approximately the same space, we would expect their log MLEs to be around the same and certainly not as divergent as this. We discuss this further below.
 
 \begin{figure}
-\includegraphics[width=0.5\linewidth]{06-tree-inference/fig/joint_trace_dens_ch1-10} \includegraphics[width=0.5\linewidth]{06-tree-inference/fig/joint_trace_ch1-10} \caption{MCMC joint probability traces for the linked model. Although a preferred general area of the probability space emerges, this area has wide bounds. There are two clear outliers and there is a considerable degree of inconsistency between chains.}\label{fig:linked-all-trace}
+\includegraphics[width=0.5\linewidth]{06-tree-inference/fig/joint_trace_dens_ch1-10} \includegraphics[width=0.5\linewidth]{06-tree-inference/fig/joint_trace_ch1-10} \caption[MCMC joint probability traces for the linked model]{MCMC joint probability traces for the linked model. Although a preferred general area of the probability space emerges, this area has wide bounds. There are two clear outliers and there is a considerable degree of inconsistency between chains.}\label{fig:linked-all-trace}
 \end{figure}
 
 The separate model, in which two trees are sampled at each step, one inferred using only cognate data and one inferred using only phonotactic data, fails to reach stable convergence and gives unacceptably low ESS figures in most instances. With a burn-in of 15\%, as per the linked model above, only 3 chains give a stable posterior sample with satisfactory ESS values. A fourth stabilises after a 20\% burn-in, and three others eventually stabilise in similar areas of the probability space to the others, but only after burn-in values of 50\%, 60\% and 70\%. We apply a consistent 20\% burn-in to the four most stable chains and discard the rest. Two of these converge in the same area while the other two converge in spaces of slightly lower joint likelihood. On this evidence, it is not entirely clear which is the most correct posterior distribution. We accept the two higher likelihood chains space as it makes the study's null hypothesis deliberately harder to reject (the null hypothesis that the joint model is no better than the separate model is harder to reject if we raise the bar set by the separate model). This gives a posterior sample of 160 million states and a marginally satisfactory ESS of 100 or greater for all parameters. Maximum clade credibility trees for each of the two tree elements---one inferred only with cognate data and the other inferred only with phonotactic data---are depicted in Figure \ref{fig:separate-cogs-vs-phonotactics-all}.
 
 \begin{figure}
-\includegraphics[width=0.5\linewidth]{06-tree-inference/fig/sep_trace_ch1-10} \includegraphics[width=0.5\linewidth]{06-tree-inference/fig/sep_trace_dens_ch1-10} \caption{MCMC joint probability traces for the separate model. The lack of consistent (as seen on the left) and stable convergence (as seen on the right) is readily apparent.}\label{fig:separate-all-trace}
+\includegraphics[width=0.5\linewidth]{06-tree-inference/fig/sep_trace_ch1-10} \includegraphics[width=0.5\linewidth]{06-tree-inference/fig/sep_trace_dens_ch1-10} \caption[MCMC joint probability traces for the separate model]{MCMC joint probability traces for the separate model. The lack of consistent (as seen on the left) and stable convergence (as seen on the right) is readily apparent.}\label{fig:separate-all-trace}
 \end{figure}
 
 The log MLEs for the separate model are 348,287 (estimated via path sampling) and 568,402 (estimated via stepping stone sampling). These MLEs can be compared with MLEs for the linked model in Table \ref{tab:linked-vs-separate-mles}. The linked and separate models can be compared using Bayes factors, following Equation \eqref{eq:bf}.
@@ -257,7 +257,7 @@ The sign of the Bayes factor indicates which model is preferred. Bayes factors t
 
 \begin{table}
 
-\caption{\label{tab:linked-vs-separate-mles}Marginal likelihood estimates (MLEs) estimated via path sampling and stepping stone sampling methods for linked and separate phylogenetic models.}
+\caption[Marginal likelihood estimates (MLEs) for linked and separate phylogenetic models]{\label{tab:linked-vs-separate-mles}Marginal likelihood estimates (MLEs) estimated via path sampling and stepping stone sampling methods for linked and separate phylogenetic models.}
 \centering
 \begin{tabular}[t]{lrr}
 \toprule
@@ -271,7 +271,7 @@ Separate & 348,287 & 568,402\\
 
 \begin{table}
 
-\caption{\label{tab:linked-vs-separate-bfs}Bayes factors indicating support for the linked model over the separate model.}
+\caption[Bayes factors indicating support for the linked model over the separate model]{\label{tab:linked-vs-separate-bfs}Bayes factors indicating support for the linked model over the separate model.}
 \centering
 \begin{tabular}[t]{lr}
 \toprule
@@ -290,7 +290,7 @@ The trees are largely congruent although there are some shifts in internal struc
 \begin{figure}
 \centering
 \includegraphics{06-tree-inference/fig/cogs_vs_linked_all.pdf}
-\caption{\label{fig:cogs-vs-linked-all}Maximum clade credibility trees for the cognates-only model from Preliminary Test 2 (left) and the linked model (right), which was inferred from cogate data and phonotactic data together.}
+\caption[Maximum clade credibility trees for the cognates-only model (from Preliminary Test 2) and the linked model]{\label{fig:cogs-vs-linked-all}Maximum clade credibility trees for the cognates-only model from Preliminary Test 2 (left) and the linked model (right), which was inferred from cognate data and phonotactic data together.}
 \end{figure}
 
 The flattening effect of the phonotactic data is evident when MCC trees are calculated for each of the two tree elements of the separate model. Recall that the separate model includes two separate tree elements---one inferred with cognate data only and one inferred with phonotactic data only (both binary and continuous). Maximum clade credibility trees are inferred for each of these elements and plotted in Figure \ref{fig:separate-cogs-vs-phonotactics-all}. Side-by-side, the loss of intermediate tree-like structure is apparent in the phonotactics-only MCC tree. It is perhaps unsurprising then that the linked model, in which a single tree is inferred from all the data together, produces an intermediate level of tree-likeness, less tree-like than the cognates-only model but not as star-like as the phonotactics-only tree in the separate model.
@@ -298,7 +298,7 @@ The flattening effect of the phonotactic data is evident when MCC trees are calc
 \begin{figure}
 \centering
 \includegraphics{06-tree-inference/fig/separate_cogs_vs_phonotactics_alldata.pdf}
-\caption{\label{fig:separate-cogs-vs-phonotactics-all}Maximum clade credibility trees from the separate model. The tree inferred from cognate data only is depicted on the left, the tree inferred from phonotactics only is on right. The flatter, star-like topology and low clade support values in the tree on the right is suggestive of non-treelike signal in the phonotactics data.}
+\caption[Maximum clade credibility trees from the separate model]{\label{fig:separate-cogs-vs-phonotactics-all}Maximum clade credibility trees from the separate model. The tree inferred from cognate data only is depicted on the left, the tree inferred from phonotactics only is on right. The flatter, star-like topology and low clade support values in the tree on the right is suggestive of non-treelike signal in the phonotactics data.}
 \end{figure}
 
 \hypertarget{follow-up-test}{%
@@ -313,7 +313,7 @@ We conclude that the presence of a large partition of binary biphone data in the
 \begin{figure}
 \centering
 \includegraphics{06-tree-inference/fig/linked_all_vs_linked.pdf}
-\caption{\label{fig:linked-all-vs-linked}Comparison of maximum clade credibility trees from the linked model in the Main Test (left) and a follow-up model which includes cognate data and sound class frequency data, but excludes the binary biphone data. Both trees appear highly congruent, suggesting the binary biphone data had relaively little effect on the results of the Main Test.}
+\caption[Maximum clade credibility trees from the linked model in the Main Test and a follow-up model]{\label{fig:linked-all-vs-linked}Comparison of maximum clade credibility trees from the linked model in the Main Test (left) and a follow-up model which includes cognate data and sound class frequency data, but excludes the binary biphone data. Both trees appear highly congruent, suggesting the binary biphone data had relaively little effect on the results of the Main Test.}
 \end{figure}
 
 \hypertarget{pn-tree-discussion}{%

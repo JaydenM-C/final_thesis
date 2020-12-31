@@ -152,7 +152,7 @@ Bibliographic details for all underlying data is available in Section S2 of the 
 
 }
 
-\caption{Lexicon sizes.}\label{fig:lex-size}
+\caption[Lexicon sizes]{Lexicon sizes.}\label{fig:lex-size}
 \end{figure}
 
 Original source data, which is typically orthographic and, if digital, is sometimes mixed with metadata or other extraneous material, has undergone extensive data scrubbing, conversion to phonemic form using language-specific orthography profiles \autocite{moran_unicode_2018}, and additional automated and manual error checking. These procedures ensure basic data cleanliness. Separately however, it has long been recognised that the segmental-phonological analysis of languages is a non-deterministic process \autocites{chao_non-uniqueness_1934}{hockett_problem_1963}{hyman_universals_2008}{dresher_contrastive_2009}. Two linguists faced with the same data may produce different analyses, not due to error but due to different applications of the very many analytic criteria that figure into any analysis of segments. Consequently, the cross-linguistic phonological record varies not only according to language facts per se, but due also to variation in the practice of linguistic analysis. Recent literature \autocites{lass_vowel_1984}{hyman_universals_2008}{van_der_hulst_phonological_2017}{round_matthew_2017}{kiparsky_formal_2018} emphasises the value of normalising source descriptions prior to the analysis of cross-linguistic phonological datasets. This is not an information destroying process---it does not `standardise' languages---but it may shift information from one part of the representation (e.g., contrast between individual symbols) to another (e.g., contrasts between sequences of symbols), in order that information is located in a comparable way across the languages in the dataset, and therefore is more amenable to comparative analysis. Our wordlist data is normalised is this sense. Complex segments are split into simple sequences (e.g., prenasalised stops are split into a homorganic nasal + stop sequence); long vowels are represented as a sequence of identical short vowels, and vowel-glide-vowel sequences in which the glide is homorganic with either vowel are normalised to vowel-vowel; fortis consonants are represented as a sequence of identical short consonants, and positionally neutralised fortis/lenis stops as singletons; laminal consonants which do not figure in a pre-palatal versus dental opposition are represented as palatal, and rhotic glides which do not figure in an alveolar versus post-alveolar opposition are represented as post-alveolar \autocites[see also][]{round_phonemic_2019}{round_australian_2019}. The phonotactic character sets used in this study were extracted from these normalised, comparably segmented wordlists.
@@ -220,7 +220,7 @@ We estimate \(D\) for 415 biphone characters using a script based on the \emph{p
 
 }
 
-\caption{Density of $D$ estimates for binary biphone characters. Dotted lines mark $D=0$, the phylogenetic expectation, and $D=1$, the random expectation. Mean $D$ for all characters is 0.43, marked in red.}\label{fig:d-density}
+\caption[Density of $D$ estimates for binary biphone characters]{Density of $D$ estimates for binary biphone characters. Dotted lines mark $D=0$, the phylogenetic expectation, and $D=1$, the random expectation. Mean $D$ for all characters is 0.43, marked in red.}\label{fig:d-density}
 \end{figure}
 
 The \(D\) test was of indeterminate significance for half of all characters (234 characters, 56\% of the dataset). The \(D\) scores for 160 characters (39\% of the total dataset) show evidence of phylogenetic signal. Just 17 characters (4\%) show the opposite result, where the character is consistent with randomness and there is no phylogenetic signal present. Both null hypotheses are rejected for the remaining 4 characters, all of which are more clumped than their phylogenetic expectation. None fall somewhere between phylogenetic and random expectations (where \(D\) is significantly above 0 but significantly below 1), nor are any significantly more dispersed than the random expectation. The distribution of these results among different biphone characters is plotted in Figure \ref{fig:d-swatch}. Note that we expect around 5\% of null hypothesis rejections (approximately 9 of 185 rejected null hypotheses) to be false discoveries. Nevertheless, when considering the whole dataset as an ensemble rather than each character individually, a general result can be discerned. The clearest conclusion is that binary, permissibility-based characters tend to be low yielding in information, giving a statistically significant outcome in fewer than half of cases. Nevertheless, where a significant result can be determined, phylogenetic signal does tend to be present---to a degree that is perhaps surprising in light of previous literature describing the relative homogeneity of Australian phonotactic restrictions and their lack of utility in historical endeavours. This result suggests there may be a greater degree of historical information contained in Pama-Nyungan phonotactics than previously thought. However, it may be that a finer-grained approach to data extraction is needed in order to detect it.
@@ -233,7 +233,7 @@ These results can be compared to two earlier studies performing the same test on
 
 }
 
-\caption{Phylogenetic signal significance testing for binary biphone characters. This grid colour-codes each biphone character according to the results of its respective significance tests. The grid is arranged such that the vertical axis represents the first segment of the biphone and the horizontal axis represents the second segment. Besides a tendency for phonotactic restrictions at word boundaries to show phylogenetic signal, few patterns stand out. %Note that throughout, we use the symbols /ȶ, ȵ, ȴ/ to represent the alveo-palatals, as distinct from the dorso-palatals /c, ɲ, ʎ/.
+\caption[Phylogenetic signal significance testing for binary biphone characters]{Phylogenetic signal significance testing for binary biphone characters. This grid colour-codes each biphone character according to the results of its respective significance tests. The grid is arranged such that the vertical axis represents the first segment of the biphone and the horizontal axis represents the second segment. Besides a tendency for phonotactic restrictions at word boundaries to show phylogenetic signal, few patterns stand out. %Note that throughout, we use the symbols /ȶ, ȵ, ȴ/ to represent the alveo-palatals, as distinct from the dorso-palatals /c, ɲ, ʎ/.
 }
 \label{fig:d-swatch}
 \end{figure}
@@ -244,7 +244,7 @@ These results can be compared to two earlier studies performing the same test on
 Given a sufficient number of taxa for which data are available (\textgreater{}50), \(D\) scores should reflect a degree of phylogenetic signal present in the data, independently of tree size (the number of taxa) and shape (branching patterns). To check this, in Figure \ref{fig:d-scatterplots}(A) for each character we plot its \(D\) score against the number of doculects for which it had non-missing values. Irrespective of the number of doculects that supply non-missing values, the \(D\) scores appear to cluster centrally around mean \(D\) for the dataset, suggesting that \(D\) is not being unduly affected by missing values for particular characters. A second check leads to rather different results, however. We check whether skewed distributions of character values affects \(D\) scores (Figure \ref{fig:d-scatterplots}(B)). Here, we consider the distribution of 1s and 0s for each character and plot \(D\) against how skewed the distribution of character values is towards a particular value. For example, a character where there are 108 `1' values in the dataset and only 4 `0' values will have a skewing rating of 0.96 (the count of `1' values, 107, divided by 112 total observations). Here, we find that when the ratio of 1s and 0s for a character is highly unequal, estimates of \(D\) tend towards extreme magnitudes while also being unrevealing, that is, statistically indistinguishable from 0 and 1.\footnote{Note that it is a desirable feature of the \(D\) test that it should return a lack of significance when there is a near-complete lack of variability in the data for the test to evaluate. This is an issue with the data, not the test.} As described above, Australian languages are known for homogeneity in phonological inventories and phonotactic restrictions, so consequently there are many characters with skewed distributions affecting the results. In Figures \ref{fig:d-density-filtered}--\ref{fig:d-swatch-filtered}, we plot a subset of the \(D\) test results, restricted to characters with less skewing.
 
 \begin{figure}[tbp]
-\includegraphics[width=1\linewidth]{05-phylo-signal/fig/d-scatterplots} \caption{Scatterplot of $D$ scores against (A) the number of doculects with non-missing values for each character and (B) the skewing of the distribution of 1s and 0s for each character. $D$ clusters evenly around the mean regardless of the number of missing values. Variation in $D$ increases greatly among characters where all but 1 or a few doculects share the same value, but the results are overwhelmingly not significant.}\label{fig:d-scatterplots}
+\includegraphics[width=1\linewidth]{05-phylo-signal/fig/d-scatterplots} \caption[Scatterplots of $D$ scores]{Scatterplot of $D$ scores against (A) the number of doculects with non-missing values for each character and (B) the skewing of the distribution of 1s and 0s for each character. $D$ clusters evenly around the mean regardless of the number of missing values. Variation in $D$ increases greatly among characters where all but 1 or a few doculects share the same value, but the results are overwhelmingly not significant.}\label{fig:d-scatterplots}
 \end{figure}
 
 \begin{figure}[tbp]
@@ -253,7 +253,7 @@ Given a sufficient number of taxa for which data are available (\textgreater{}50
 
 }
 
-\caption{Density of $D$ estimates for binary biphone characters where character values are skewed less than 97:3.}\label{fig:d-density-filtered}
+\caption[Density of $D$ estimates for binary biphone characters, highly skewed characters removed]{Density of $D$ estimates for binary biphone characters where character values are skewed less than 97:3.}\label{fig:d-density-filtered}
 \end{figure}
 
 \begin{figure}[tbp]
@@ -262,7 +262,7 @@ Given a sufficient number of taxa for which data are available (\textgreater{}50
 
 }
 
-\caption{$D$ scores for binary biphone characters where character values are skewed less than 97:3. Red shades show a character's proximity to $D=0$---darker red indicates stronger phylogenetic signal. Blue shades show a character's proximity to $D=1$, where character values are distributed randomly. This heat grid shows the proximity of each individual character's $D$ value to $D=0$, its expectation if the character evolved along the phylogeny following a Brownian motion process. The vertical axis represents the first segment of the biphone, the horizontal axis represents the second segment.}\label{fig:d-swatch-filtered}
+\caption[$D$ scores for binary biphone characters, highly skewed characters removed]{$D$ scores for binary biphone characters where character values are skewed less than 97:3. Red shades show a character's proximity to $D=0$---darker red indicates stronger phylogenetic signal. Blue shades show a character's proximity to $D=1$, where character values are distributed randomly. This heat grid shows the proximity of each individual character's $D$ value to $D=0$, its expectation if the character evolved along the phylogeny following a Brownian motion process. The vertical axis represents the first segment of the biphone, the horizontal axis represents the second segment.}\label{fig:d-swatch-filtered}
 \end{figure}
 
 \hypertarget{phy-sig-cont}{%
@@ -290,7 +290,7 @@ Mean \(K\) for all 490 characters is 0.54 (\(SD\) 0.21) (Figure \ref{fig:k-densi
 
 }
 
-\caption{Density of $K$ scores for all frequency-based biphone character (frequencies of both forward and backward transitions between segments).}\label{fig:k-density}
+\caption[Density of $K$ scores for all frequency-based biphone characters]{Density of $K$ scores for all frequency-based biphone characters (frequencies of both forward and backward transitions between segments).}\label{fig:k-density}
 \end{figure}
 
 We consider whether phylogenetic signal is higher or lower in certain kinds of biphone characters. Figure \ref{fig:k-swatch} shows a matrix of \(K\) scores for forward transition characters, with rows and columns arranged by phonological natural class. No clear pattern stands out.
@@ -301,7 +301,7 @@ We consider whether phylogenetic signal is higher or lower in certain kinds of b
 
 }
 
-\caption{Phylogenetic signal for forward transition frequencies. This heat grid shows $K$ scores for biphone characters (forward transition frequencies only). Each square represents a biphone (where the first segment is listed on the vertical axis and second segment on the horizontal axis). Data points are taken from the frequencies of each biphone, $xy$, over the total frequency of segment $x$ in each language, and then phylogenetic signal $K$ is measured for each biphone. Darker red shades indicate a stronger degree of phylogenetic signal. As with the $D$ test, no clear pattern of high versus low $K$ scores stands out, although there is a high degree of phylogenetic signal in the dataset overall.}\label{fig:k-swatch}
+\caption[Phylogenetic signal for forward transition frequencies]{Phylogenetic signal for forward transition frequencies. This heat grid shows $K$ scores for biphone characters (forward transition frequencies only). Each square represents a biphone (where the first segment is listed on the vertical axis and second segment on the horizontal axis). Data points are taken from the frequencies of each biphone, $xy$, over the total frequency of segment $x$ in each language, and then phylogenetic signal $K$ is measured for each biphone. Darker red shades indicate a stronger degree of phylogenetic signal. As with the $D$ test, no clear pattern of high versus low $K$ scores stands out, although there is a high degree of phylogenetic signal in the dataset overall.}\label{fig:k-swatch}
 \end{figure}
 
 \hypertarget{phy-sig-cont-robustness}{%
@@ -317,7 +317,7 @@ The results are plotted in Figure \ref{fig:k-simulation-plots}. The \(K\) statis
 
 }
 
-\caption{Behaviour of the $K$ statistic and randomization procedure with the Pama-Nyungan reference phylogeny. Artificial characters are simulated evolving along the phylogeny with varying levels of non-Brownian noise. When a pure Brownian motion process operates, $K$ averages around 1 as expected. Where there is no Brownian process at all (and therefore no phylogenetic signal) $K$ is elevated to around 0.2---likely an artefact of this particular tree size and shape.}\label{fig:k-simulation-plots}
+\caption[Behaviour of the $K$ statistic and randomization procedure with the Pama-Nyungan reference phylogeny]{Behaviour of the $K$ statistic and randomization procedure with the Pama-Nyungan reference phylogeny. Artificial characters are simulated evolving along the phylogeny with varying levels of non-Brownian noise. When a pure Brownian motion process operates, $K$ averages around 1 as expected. Where there is no Brownian process at all (and therefore no phylogenetic signal) $K$ is elevated to around 0.2---likely an artefact of this particular tree size and shape.}\label{fig:k-simulation-plots}
 \end{figure}
 
 As a final check, we consider whether the \(K\) statistic might be affected by the quantity of missing or `not applicable' values for a given character. We inspect this visually by plotting, for all biphone characters, the relation between a biphone's \(K\) score and the number of language varieties with non-missing data points on which \(K\) was calculated (Figure \ref{fig:k-scatterplot}). When \(K\) is calculated on fewer than around 40 non-missing values, the statistic shows a wider degree of variability. In addition, phylogenetic signal is deemed statistically significant for fewer characters in this range, suggesting that the quantity of missing values is affecting the statistical power of the test. However, all \(K\) scores cluster centrally around the mean regardless of the number of languages with non-missing values, suggesting that the mean \(K\) we observe for the dataset overall is not significantly affected by missing data.
@@ -328,7 +328,7 @@ As a final check, we consider whether the \(K\) statistic might be affected by t
 
 }
 
-\caption{Estimates of $K$ for forward and backward transition frequency characters plotted against the number of doculects with non-missing values for each character. Although some statistical power is lost and variability increases among characters with more missing values, $K$ scores cluster evenly around mean $K$ (0.52).}\label{fig:k-scatterplot}
+\caption[Estimates of $K$ plotted against the number of doculects with non-missing values for each character]{Estimates of $K$ for forward and backward transition frequency characters plotted against the number of doculects with non-missing values for each character. Although some statistical power is lost and variability increases among characters with more missing values, $K$ scores cluster evenly around mean $K$ (0.52).}\label{fig:k-scatterplot}
 \end{figure}
 
 \hypertarget{fwd-vs-bkwd}{%
@@ -340,7 +340,7 @@ As a final check, we consider whether the \(K\) statistic might be affected by t
 
 }
 
-\caption{Distribution of $K$ scores for forward transition frequencies versus backward transition frequencies. We find no significant difference between these character types.}\label{fig:k-fwd-vs-bkwd}
+\caption[Distribution of $K$ scores for forward transition frequencies versus backward transition frequencies]{Distribution of $K$ scores for forward transition frequencies versus backward transition frequencies. We find no significant difference between these character types.}\label{fig:k-fwd-vs-bkwd}
 \end{figure}
 
 We find no significant difference in the means of \(K\) for forward transition characters (mean \(K =\) 0.544) and backward transition characters (mean \(K =\) 0.537) (\(t=\) 0.33, \(df=\) 487.97, \(p=\) 0.74, 95\% CI {[}-0.03, 0.04{]}). The distributions of \(K\) scores for forward and backward transitions are plotted in Figure \ref{fig:k-fwd-vs-bkwd}, showing a high degree of overlap between the two.
@@ -358,7 +358,7 @@ Mean \(K\) for normalised character data is 0.55 (\(SD\) 0.2). Of 490 characters
 
 }
 
-\caption{Distributions of $K$ for untransformed character values and their normalised counterparts. We find no significant difference between these distributions.}\label{fig:orig-vs-nrmlzd}
+\caption[Distributions of $K$ for untransformed character values and their normalised counterparts]{Distributions of $K$ for untransformed character values and their normalised counterparts. We find no significant difference between these distributions.}\label{fig:orig-vs-nrmlzd}
 \end{figure}
 
 \hypertarget{phy-sig-classes}{%
@@ -370,7 +370,7 @@ To account for this non-independence and more faithfully model what we know abou
 
 \begin{table}
 
-\caption{\label{tab:k-natural-classes-summary}Summary of $K$ analysis for forward and backward transition frequencies between different natural classes. The two rightmost columns indicate the total number of characters analysed and the percentage of those characters with a significant degree of phylogenetic signal according to the randomization procedure.}
+\caption[Summary of $K$ analysis for forward and backward transition frequencies, comparing different natural classes]{\label{tab:k-natural-classes-summary}Summary of $K$ analysis for forward and backward transition frequencies between different natural classes. The two rightmost columns indicate the total number of characters analysed and the percentage of those characters with a significant degree of phylogenetic signal according to the randomization procedure.}
 \centering
 \begin{tabular}[t]{lrrr}
 \toprule
@@ -391,7 +391,7 @@ Table \ref{tab:k-natural-classes-summary} presents mean \(K\) and the proportion
 
 }
 
-\caption{Comparison of $K$ scores for transitions between different kinds of natural classes. The differences between all three distributions are not statistically significant.}\label{fig:k-natural-classes}
+\caption[Comparison of $K$ scores for transitions between different kinds of natural classes]{Comparison of $K$ scores for transitions between different kinds of natural classes. The differences between all three distributions are not statistically significant.}\label{fig:k-natural-classes}
 \end{figure}
 
 \hypertarget{classes-vs-biphones}{%
@@ -403,7 +403,7 @@ Table \ref{tab:k-natural-classes-summary} presents mean \(K\) and the proportion
 
 }
 
-\caption{Distributions of $K$ scores for biphone characters, coding the relative frequencies of transitions between phonological segments, and natural-class-based characters, coding the relative frequencies of transitions between natural classes of segments. Phylogenetic signal is higher overall in the natural-class-based dataset than the biphone-based dataset}\label{fig:k-biphones-vs-features}
+\caption[Distributions of $K$ scores for segmental biphone characters versus natural-class-based characters]{Distributions of $K$ scores for biphone characters, coding the relative frequencies of transitions between phonological segments, and natural-class-based characters, coding the relative frequencies of transitions between natural classes of segments. Phylogenetic signal is higher overall in the natural-class-based dataset than the biphone-based dataset}\label{fig:k-biphones-vs-features}
 \end{figure}
 
 We compare the degree of phylogenetic signal in the biphone data tested in Section \ref{phy-sig-cont} to the natural-class-based data tested here (see Figure \ref{fig:k-biphones-vs-features}). Mean \(K\) for all natural-class-based characters is 0.61, which is significantly higher than the mean \(K\) for biphone data, 0.54 (\(t=\) 4.38, \(df=\) 622.47, \(p < 0.001\), 95\% CI {[}0.04, 0.1{]}). The Kolmogorov-Smirnov test, which is more sensitive to the overall shape of the distribution than a t-test comparison of means, also finds a significant distinction between \(K\) for biphone characters and \(K\) for natural-class-based characters (\(D=\) 0.21, \(p < 0.001\)).
@@ -430,7 +430,7 @@ To evaluate the robustness of our results against phylogenetic uncertainty, we r
 
 }
 
-\caption{Comparison of $K$ statistics using a 100-tree posterior sample versus the maximum clade credibility tree alone.}\label{fig:tree-uncertainty}
+\caption[$K$ statistics using a 100-tree posterior sample versus the maximum clade credibility tree alone]{Comparison of $K$ statistics using a 100-tree posterior sample versus the maximum clade credibility tree alone.}\label{fig:tree-uncertainty}
 \end{figure}
 
 214 sound class characters in total are tested, giving 21,400 \(K\) statistics in total (each character multiplied by 100 trees). The mean of these \(K\) scores is 0.59, which compares to a mean \(K\) of 0.6 for the same characters applied only to the maximum clade credibility tree as in Section \ref{phy-sig-classes}. This difference is not statistically significant (\(t=\) -0.92, \(df=\) 217.21, \(p=\) 0.359, 95\% CI {[}-0.05, 0.02{]}). The distributions of these \(K\) scores are illustrated in Figure \ref{fig:tree-uncertainty}. This result suggests our results are robust to phylogenetic uncertainty associated with our reference tree. The maximum clade credibility tree we use is not significantly inflating or deflating the \(K\) statistic.
@@ -443,7 +443,7 @@ A reviewer points out that we have only demonstrated robustness to phylogenetic 
 
 }
 
-\caption{Wordlists ranked by size. (A) shows every second wordlist in the language sample. (B) shows the middle 50\% of wordlists. Each subset contains the same number of wordlists but discrepancy in their size is greatly reduced in (B).}\label{fig:wordlist-subset-sizes}
+\caption[Wordlists ranked by size]{Wordlists ranked by size. (A) shows every second wordlist in the language sample. (B) shows the middle 50\% of wordlists. Each subset contains the same number of wordlists but discrepancy in their size is greatly reduced in (B).}\label{fig:wordlist-subset-sizes}
 \end{figure}
 
 \begin{figure}[tbp]
@@ -452,7 +452,7 @@ A reviewer points out that we have only demonstrated robustness to phylogenetic 
 
 }
 
-\caption{Comparison of $K$ statistics using only wordlists falling within the 25th and 75th quantiles (middle 50\%) for wordlist size, versus a sample of every 2nd wordlist (when ranked in order of size).}\label{fig:wordlist-uncertainty}
+\caption[Comparison of $K$ statistics using middle quantile wordlists versus every second wordlist]{Comparison of $K$ statistics using only wordlists falling within the 25th and 75th quantiles (middle 50\%) for wordlist size, versus a sample of every 2nd wordlist (when ranked in order of size).}\label{fig:wordlist-uncertainty}
 \end{figure}
 
 In Section \ref{phylo-sig-wordlists} we mentioned that our wordlists vary significantly is size. The length of a wordlist can correlate with many other linguistic properties that it has. For instance, in our data, the number of entries in a wordlist and the mean phonemic length of those entries have a Pearson's correlation coefficient of \(r = 0.71\) (\(p < 0.001\)). That is, longer lists tend to contain longer words (presumably since shorter lists are weighted towards more basic, shorter vocabulary items). The existence of correlations like this means that it is not possible simply to `counterbalance' the length of wordlists by sub-sampling or resampling their items so that the resampled lists all have the same length. For example, the resampled lists that derive from longer underlying lists would still contain longer words. Nevertheless, it would still be desirable to know whether our results in Sections \ref{phy-sig-bin}--\ref{phy-sig-classes} are unduly influenced by the disparity in our wordlist lengths, by manipulating it in a controlled fashion. To do this, we extracted two different language sub-samples from our dataset. For the first, we ranked all wordlists by size and selected every second language, producing a sample half the original size but with the same disparity in lengths. For the second, we ranked all wordlists by size and selected the middle 50\% of the ranking, again producing a sample of half the size but this time with heavily reduced disparity, as shown in Figure \ref{fig:wordlist-subset-sizes}. Wordlists in the middle 50\% range in length from 528 to 1361 (mean 870).
