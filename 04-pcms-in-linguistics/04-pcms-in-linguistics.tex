@@ -8,11 +8,11 @@
 %Use this command (above) to suppress the header from the preceding chapter.
 
 \noindent
-Text from the following publication has been incorporated as Chapter~\ref{Chap:label}:
+Text from the following publication has been incorporated as Chapter~\ref{ch-pcms}:
 
 \noindent
 %\fullcite{DumyCitationKey}
-DETAILS TBA (IN PREP)
+Jayden L. Macklin-Cordes & Erich R. Round. In prep. Phylogenetic comparative methods in linguistics. \emph{Details TBA}.
 
 \begin{table}[h]
 	\centering
@@ -20,25 +20,19 @@ DETAILS TBA (IN PREP)
 		\toprule
 		Contributor & Statement of contribution & \% \\
 		\midrule
-		\textbf{Your Name}				& writing of text 					& 70\\
-															& proof-reading							& 60 \\
-															& theoretical derivations 	& 70\\
-															& numerical calculations 		& 100\\
-															& preparation of figures 		& 80 \\
-															& initial concept						& 10 \\
+		\textbf{Jayden Macklin-Cordes}	& initial concept			& 100 \\
+		                                & analysis     	            & 100  \\
+		                                & theoretical derivations 	& 100  \\
+		                                & writing of text 			& 100  \\
+										& proof-reading				& 50  \\
 		\midrule
-		Co-author 1								& writing of text 					& 20\\
-															& proof-reading							& 10 \\
-															& supervision, guidance 		& 20\\
-															& theoretical derivations 	& 10\\
-															& preparation of figures 		& 20 \\
-															& initial concept						& 10 \\
+		Erich Round						& supervision, guidance 	& 100 \\
+										& proof-reading				& 50  \\
 		\bottomrule
 	\end{tabular}
 \end{table}
 
-NOTE: The following chapter will form part of a publication which is in preparation. In the published version, Erich will essentially insert a case study in Section 4.4. The rest of the text will remain largely the same with the exception of some necessary editing to the paper's introduction and so forth. The chapter version will remain a literature review style work describing some other examples in the place of Erich's case study.
-
+The following chapter will form part of a publication which is in preparation. Macklin-Cordes has taken responsibility for the research essay component of this paper, which is what is presented here in this thesis. In the eventual published version, Round will contribute the results of a case study looking at laminal contrasts in Australian languages.
 
 % ***************************************************
 % Example of an internal chapter
@@ -46,7 +40,7 @@ NOTE: The following chapter will form part of a publication which is in preparat
 %This is an internal chapter of the thesis.
 %If you have a long title, you can supply an abbreviated version to print in the Table of Contents using the optional argument to the \chapter command.
 \chapter[Phylogenetic Comparative Methods]{Phylogenetic Comparative Methods in Linguistics}
-\label{Chap:pcms-in-ling}	%CREATE YOUR OWN LABEL.
+\label{ch-pcms}	%CREATE YOUR OWN LABEL.
 \pagestyle{headings}
 
 % ********* Enter your text below this line: ********
@@ -113,7 +107,7 @@ Rather than assuming phylogenetic non-independence \emph{a priori}, as the phylo
 \hypertarget{phylo-sig-quant}{%
 \subsection{Quantifying phylogenetic signal in continuous variables}\label{phylo-sig-quant}}
 
-\textcite{blomberg_testing_2003} provide a suite of tools for quantifying phylogenetic signal, which have become somewhat of a standard in the field (cited 3150 times on 31 May 2020, according to Google Scholar). Recent comparative studies using these tools include \textcite{balisi_dietary_2018}, \textcite{hutchinson_contemporary_2018} and \textcite{leff_predicting_2018}. \textcite{blomberg_testing_2003} present a descriptive statistic, \(K\), which is generalizable across phylogeneies of different sizes and shapes. In addition, they provide a randomization test for checking whether the degree of phylogenetic signal for a given dataset is statistically significant. \(K\) can be calculated using either phylogenetic independent contrasts (PICs) \autocite{felsenstein_phylogenies_1985} or generalised least squares (GLS) \autocite{grafen_phylogenetic_1989} (see Section \ref{phylo-auto-bio}). In a Brownian motion model, where variable values can wander up and down with equal probability through time, PIC variances are expected to be proportional to elapsed time. Among more closely related languages, where there has been less divergence time for variable values to wander, the variance of PICs is expected to be low. The randomization test works by comparing whether observed PICs are lower than the PIC values obtained by randomly permuting the data across the tips of the tree. The process of permuting data across tree tips at random is repeated many times over. If the real variances, with data in their correct positions on the tree, are lower than 95\% of the randomly permuted datasets, then the null hypothesis of no phylogenetic signal can be rejected at the conventional 95\% confidence level. In other words, closely related languages resemble one another to a statistically significantly greater degree than would be expected by chance.
+\textcite{blomberg_testing_2003} provide a suite of tools for quantifying phylogenetic signal, which have become somewhat of a standard in the field (cited 3150 times on 31 May 2020, according to Google Scholar). Recent comparative studies using these tools include \textcite{balisi_dietary_2018}, \textcite{hutchinson_contemporary_2018} and \textcite{leff_predicting_2018}. \textcite{blomberg_testing_2003} present a descriptive statistic, \(K\), which is generalisable across phylogeneies of different sizes and shapes. In addition, they provide a randomisation test for checking whether the degree of phylogenetic signal for a given dataset is statistically significant. \(K\) can be calculated using either phylogenetic independent contrasts (PICs) \autocite{felsenstein_phylogenies_1985} or generalised least squares (GLS) \autocite{grafen_phylogenetic_1989} (see Section \ref{phylo-auto-bio}). In a Brownian motion model, where variable values can wander up and down with equal probability through time, PIC variances are expected to be proportional to elapsed time. Among more closely related languages, where there has been less divergence time for variable values to wander, the variance of PICs is expected to be low. The randomisation test works by comparing whether observed PICs are lower than the PIC values obtained by randomly permuting the data across the tips of the tree. The process of permuting data across tree tips at random is repeated many times over. If the real variances, with data in their correct positions on the tree, are lower than 95\% of the randomly permuted datasets, then the null hypothesis of no phylogenetic signal can be rejected at the conventional 95\% confidence level. In other words, closely related languages resemble one another to a statistically significantly greater degree than would be expected by chance.
 
 The descriptive statistic, \(K\), quantifies the strength of phylogenetic signal. As with the randomisation procedure above, the input is a set of observed values, where each observation is associated with a tip of the reference tree. \textcite[p.~722]{blomberg_testing_2003} give an explanation of the calculation of the \(K\) statistic. To recap briefly, \(K\) is calculated by, firstly, taking the mean squared error of the data (\(MSE_0\)), as measured from a phylogenetically-corrected mean\footnote{Simply taking the mean of some variable would be misleading in cases where members of a particularly large clade happen to share similar values at an extreme end of the range. A phylogenetic mean is an estimate of the mean which has been corrected for overrepresentation by larger subclades \autocite[see][]{garland_polytomies_1999}.}, and dividing it by the mean squared error of the data (\(MSE\)), calculated using a variance-covariance matrix of phylogenetic distances between tips in the reference tree (the same variance-covariance matrix of phylogenetic distances incorporated into the error term in GLS-based phylogenetic regression, as discussed in the previous section). This latter value, \(MSE\), will be small when the pattern of covariance in the data matches what would be expected given the phylogenetic distances in the reference tree, leading to a high \(MSE_0/MSE\) ratio and vice versa. Thus, a high \(MSE_0/MSE\) ratio indicates higher phylogenetic signal. Finally, the observed ratio can be scaled according to its expectation under the assumption of Brownian motion evolution along the tree. This gives a \(K\) score which can be compared directly between analyses using different tree sizes and shapes. Where \(K = 1\), this suggests a perfect match between the covariance observed in the data and what would be expected given the reference tree and the assumption of Brownian motion evolution. Where \(K < 1\), close relatives in the tree bear less resemblance in the data than would be expected under the Brownian motion assumption. Notably, \(K > 1\) is also possible---this occurs where there is less variance in the data than expected, given the Brownian motion assumption and divergence times suggested by the reference tree. In other words, relatives bear greater resemblance than would be expected.
 
@@ -137,7 +131,7 @@ Scaling \(D\) in this way provides a standardised statistic which can be compare
 \hypertarget{phylo-sig-mult}{%
 \subsection{Quantifying phylogenetic signal in multivariate and multidimensional data}\label{phylo-sig-mult}}
 
-A notable, more recent development concerns the generalization of methods for quantifying phylogenetic signal in multivariate and multi-dimensional data. Methods discussed so far quantify phylogenetic signal for a single variable of interest. \textcite{zheng_new_2009} present a generalization of the \textcite{blomberg_testing_2003} \(K\) statistic for jointly estimating the strength of phylogenetic signal in a collection of variables. In addition, their method allows the incorporation of measurement error or variation within the entities being studied (be they species, languages, etcetera) \autocite[see][]{ives_within-species_2007}. Both of these developments are expected to improve the statistical power of the test, which is an advantage particularly where small sample sizes are concerned, since the original \(K\) statistic requires a minimum sample size of around 20 and lacks sufficient statistical power below this level. This is achieved by standardizing the values of each variable to have mean 0 and variance 1 then jointly measuring the MSE for all variables. \textcite{adams_generalized_2014} presents another generalization of \(K\) for use with `multivariate traits', \(K_{mult}\). Whereas \textcite{zheng_new_2009} estimate phylogenetic signal for a set of multiple \emph{independent} variables simultaneously, a multivariate trait is conceptually a single evolutionary trait but has multiple values associated with it, which are mathematically interrelated and cannot be analyzed independently. The example \textcite{adams_generalized_2014} uses is head shape for a family of salamander species.
+A notable, more recent development concerns the generalisation of methods for quantifying phylogenetic signal in multivariate and multi-dimensional data. Methods discussed so far quantify phylogenetic signal for a single variable of interest. \textcite{zheng_new_2009} present a generalisation of the \textcite{blomberg_testing_2003} \(K\) statistic for jointly estimating the strength of phylogenetic signal in a collection of variables. In addition, their method allows the incorporation of measurement error or variation within the entities being studied (be they species, languages, etcetera) \autocite[see][]{ives_within-species_2007}. Both of these developments are expected to improve the statistical power of the test, which is an advantage particularly where small sample sizes are concerned, since the original \(K\) statistic requires a minimum sample size of around 20 and lacks sufficient statistical power below this level. This is achieved by standardising the values of each variable to have mean 0 and variance 1 then jointly measuring the MSE for all variables. \textcite{adams_generalized_2014} presents another generalisation of \(K\) for use with `multivariate traits', \(K_{mult}\). Whereas \textcite{zheng_new_2009} estimate phylogenetic signal for a set of multiple \emph{independent} variables simultaneously, a multivariate trait is conceptually a single evolutionary trait but has multiple values associated with it, which are mathematically interrelated and cannot be analyzed independently. The example \textcite{adams_generalized_2014} uses is head shape for a family of salamander species.
 
 \hypertarget{pcms-applications}{%
 \section{Phylogenetic signal and PCMs in linguistics}\label{pcms-applications}}
