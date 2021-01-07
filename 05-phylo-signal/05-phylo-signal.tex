@@ -346,7 +346,7 @@ As a final check, we consider whether the \(K\) statistic might be affected by t
 We find no significant difference in the means of \(K\) for forward transition characters (mean \(K =\) 0.544) and backward transition characters (mean \(K =\) 0.537) (\(t=\) 0.33, \(df=\) 487.97, \(p=\) 0.74, 95\% CI {[}-0.03, 0.04{]}). The distributions of \(K\) scores for forward and backward transitions are plotted in Figure \ref{fig:k-fwd-vs-bkwd}, showing a high degree of overlap between the two.
 
 \hypertarget{norm-characters}{%
-\subsection{normalisation of character values}\label{norm-characters}}
+\subsection{Normalisation of character values}\label{norm-characters}}
 
 Visual inspection of the density plots for each character shows there is a tendency for character data to be negatively skewed (the weight of the distribution is left-of-centre), although this is not universally the case. To test whether the particular, heavy-tailed nature of the data has an effect on tests for phylogenetic signal, we apply Tukey's Ladder of Powers transformation to each character in the dataset and re-run both the \(K\) test and randomisation procedure. This is a power transformation, which makes the data fit a normal distribution as closely as possible. It does this by finding the power transformation value, \(\lambda\), that maximises the \(W\) statistic of the Shapiro-Wilk test for normality for each character individually. For our purposes, this transformation is effectively a change in the evolutionary model: A Brownian motion process is still assumed---a character value may wander up or down with equal probability---but, in this model, character values shift up or down along a transformed scale.
 
